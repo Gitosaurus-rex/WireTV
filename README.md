@@ -1,278 +1,591 @@
-# OpenTv
+OpenTv
 
-IPTV-spelare för Windows med inbyggt VPN-stöd. Byggd med .NET 8, Avalonia UI 11
-och LibVLCSharp.
+IPTV player for Windows with built-in VPN support. Built with .NET 8, Avalonia UI 11, and LibVLCSharp.
 
-**Klart:** M3U-import, Xtream Codes, uppspelning, WireGuard, TV-guide (XMLTV).
-**Återstår:** OpenVPN. Se längst ned.
+Complete: M3U import, Xtream Codes, playback, WireGuard, TV guide (XMLTV)
+Remaining: OpenVPN — see What's Remaining
 
----
+Features
+M3U / M3U8 playlist import
+Local M3U file support
+Xtream Codes support
+Live TV playback
+XMLTV / EPG TV guide
+WireGuard VPN integration
+Persistent VPN tunnels
+Windows DPAPI password encryption
+Standalone single-file .exe publishing
+Self-contained deployment with bundled VLC
+MVVM architecture
+Platform-independent core logic designed for future Android/iOS support
+Project Structure
 
-## Projektstruktur
+The application logic is intentionally separated from the platform so that Core and Core.Vpn can be reused directly in a future Android/iOS version.
 
-Logiken är avsiktligt separerad från plattformen så att `Core` och `Core.Vpn` kan
-återanvändas rakt av i en framtida Android/iOS-version.
+Project	Target	Contents
+Core/	net8.0	M3U parsing, Xtream client, XMLTV parsing and EPG matching, data models, playlist loading, JSON storage. No Windows or UI dependencies.
+Core.Vpn/	net8.0	Contracts only: IVpnService, VpnManager, VpnProfile, VpnState. Platform-independent.
+Windows.Vpn/	net8.0-windows	WireGuard implementation using the official wireguard.exe and tunnel service. UAC handling.
+Windows.UI/	net8.0-windows	Avalonia application using MVVM. Produces OpenTv.exe.
 
-| Projekt | Target | Innehåll |
-|---|---|---|
-| `Core/` | `net8.0` | M3U-parsning, Xtream-klient, XMLTV-parsning och EPG-matchning, datamodeller, playlist-laddning, JSON-lagring. Inga Windows- eller UI-beroenden. |
-| `Core.Vpn/` | `net8.0` | Enbart kontrakt: `IVpnService`, `VpnManager`, `VpnProfile`, `VpnState`. Plattformsneutralt. |
-| `Windows.Vpn/` | `net8.0-windows` | WireGuard-implementation via den officiella `wireguard.exe` + tunnel-tjänsten. UAC-hantering. |
-| `Windows.UI/` | `net8.0-windows` | Avalonia-app (MVVM). Producerar `OpenTv.exe`. |
+The dependency chain only goes in one direction:
 
-Beroendekedjan går bara åt ett håll: `Windows.UI` → `Windows.Vpn` → `Core.Vpn` → `Core`.
-`Core` känner inte till att VPN eller Avalonia existerar.
+Windows.UI
+    ↓
+Windows.Vpn
+    ↓
+Core.Vpn
+    ↓
+Core
 
----
 
-## Krav
+Core has no knowledge of VPN, Windows, or Avalonia.
 
-* **.NET 8 SDK** — installerat och verifierat (`dotnet --version` → 8.0.424)
-* **WireGuard for Windows** — krävs bara för VPN-funktionen: https://www.wireguard.com/install/
-  Appen upptäcker automatiskt om det saknas och säger till i VPN-fliken.
+Requirements
+.NET 8 SDK
 
-VLC-motorn behöver du **inte** installera — den följer med som NuGet-paket
-(`VideoLAN.LibVLC.Windows`) och packas in i bygget.
+Install the .NET 8 SDK and verify it with:
 
----
+dotnet --version
 
-## Bygga och köra
 
-```bash
+The project has been verified with:
+
+8.0.424
+
+WireGuard for Windows
+
+WireGuard is only required for VPN functionality.
+
+Download it from the official website:
+
+https://www.wireguard.com/install/
+
+The application automatically detects whether WireGuard is installed and displays a message in the VPN tab if it is missing.
+
+VLC
+
+You do not need to install VLC manually.
+
+The VLC engine is included through the NuGet package:
+
+VideoLAN.LibVLC.Windows
+
+
+It is packaged as part of the application build.
+
+Building and Running
+
+Build the complete solution:
+
 dotnet build OpenTv.sln
-```
 
-```bash
+
+Run the application:
+
 dotnet run --project Windows.UI/OpenTv.Windows.UI.csproj
-```
 
-## Bygga en fristående .exe
+Publishing a Standalone .exe
 
-Self-contained betyder att .NET-runtime och VLC packas med — mottagaren behöver
-inget installerat. Det finns två varianter.
+Self-contained publishing includes the .NET runtime and VLC, so the recipient does not need anything else installed.
 
-### Alternativ 1: en enda .exe-fil (rekommenderas för att skicka vidare)
+There are two deployment options.
 
-```bash
+Option 1: Single .exe
+
+This is the recommended option for distributing the application.
+
 dotnet publish Windows.UI/OpenTv.Windows.UI.csproj -c Release -r win-x64 --self-contained true -p:EmbedLibVlc=true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true -p:EnableCompressionInSingleFile=true -p:DebugType=none -o publish-single
-```
 
-Ger **exakt en fil: `publish-single\OpenTv.exe`, ca 88 MB**. Inget annat behövs.
 
-Första gången den startar packar den upp VLC-motorn (~100 MB) till
-`%LOCALAPPDATA%\OpenTv\runtime\libvlc-3.0.21\` — det tar ungefär en sekund. Alla
-senare starter är omedelbara. Mappen kan raderas när som helst; den återskapas.
+This produces exactly one file:
 
-### Alternativ 2: mapp-utgåva (snabbast att bygga, inget uppackningssteg)
+publish-single\OpenTv.exe
 
-```bash
+
+Size: approximately 88 MB.
+
+Nothing else is required.
+
+First startup
+
+On the first launch, the application extracts the VLC engine (~100 MB) to:
+
+%LOCALAPPDATA%\OpenTv\runtime\libvlc-3.0.21\
+
+
+This takes approximately one second.
+
+Subsequent launches are immediate.
+
+The runtime directory can be deleted at any time. It will automatically be recreated the next time the application starts.
+
+Option 2: Folder Deployment
+
+This option is faster to build and does not require an extraction step at startup.
+
 dotnet publish Windows.UI/OpenTv.Windows.UI.csproj -c Release -r win-x64 --self-contained true -o publish
-```
 
-Ger `publish\` med ca 430 filer på ~198 MB. Hela mappen måste följa med —
-`OpenTv.exe` ensam fungerar inte här.
 
-### Varför enfilsläget kräver `EmbedLibVlc`
+This produces:
 
-`PublishSingleFile` ensamt **räcker inte** och ger en app som startar men inte kan
-spela upp något. .NET plattar ut inbäddade nativbibliotek till en temporär katalog,
-vilket förstör den `libvlc\win-x64\plugins\`-struktur som VLC kräver för att hitta
-sina codecs. `Core.Initialize()` letar då förgäves bredvid exe:n och rapporterar
-"Failed to load required native libraries".
+publish\
 
-`EmbedLibVlc=true` löser det genom att i stället komprimera motorn till en resurs i
-assemblyn. [VlcRuntime.cs](Windows.UI/VlcRuntime.cs) packar upp den vid första start
-och ger LibVLCSharp en explicit sökväg. Uppackningen sker till en temporär
-grannkatalog som flyttas på plats först när den är komplett, så ett avbrutet första
-försök aldrig lämnar en halv motor som senare starter skulle lita på.
 
-Mappnamnet innehåller VLC-versionen, så en uppgradering packar upp på nytt i stället
-för att blanda plugins från två versioner — vilket VLC vägrar ladda.
+The folder contains approximately 430 files totaling around 198 MB.
 
----
+The entire folder must be distributed. OpenTv.exe alone will not work in this mode.
 
-## Lägga till kanaler
+Why EmbedLibVlc Is Required
 
-Under **Settings → Playlists → Add** finns tre källtyper:
+PublishSingleFile by itself is not sufficient for VLC.
 
-| Typ | Fält |
-|---|---|
-| `M3uUrl` | URL till en M3U/M3U8-playlist |
-| `M3uFile` | Sökväg till en lokal .m3u-fil |
-| `Xtream` | Serveradress + användarnamn + lösenord |
+.NET extracts embedded native libraries into a temporary directory. This breaks the directory structure required by VLC:
 
-För Xtream finns en **Test connection**-knapp som autentiserar mot panelen och
-visar kontostatus, utgångsdatum och antal samtidiga anslutningar — så du upptäcker
-felaktiga uppgifter direkt i stället för vid uppspelning.
+libvlc\
+└── win-x64\
+    └── plugins\
 
-`samples/test-playlist.m3u` innehåller fyra publika test-strömmar (Apple BipBop,
-Big Buck Bunny, Tears of Steel, Sintel). Den är redan förkonfigurerad i din
-`%APPDATA%\OpenTv\sources.json`, så appen spelar upp direkt vid start.
 
----
+Without this structure, VLC cannot locate its codecs and Core.Initialize() reports:
 
-## TV-guide
+Failed to load required native libraries
 
-Fyll i **XMLTV EPG URL** på en playlist för att slå på guiden. Fältet är valfritt —
-saknas det använder appen den guide-URL källan själv annonserar:
 
-* **M3U:** attributet `url-tvg` / `x-tvg-url` på `#EXTM3U`-raden
-* **Xtream:** kontots `xmltv.php`-endpoint, som byggs automatiskt
+Setting:
 
-Både `.xml` och `.xml.gz` fungerar, och en lokal filsökväg går lika bra som en URL.
-Gzip upptäcks på magic bytes i stället för filändelsen, eftersom leverantörer ofta
-har fel filändelse.
+EmbedLibVlc=true
 
-Guiden syns på två ställen:
 
-* **Kanallistan** får en rad med vad som sänds just nu plus en progress-stapel
-* **TV guide**-knappen öppnar ett eget fönster med kanaler till vänster och tablån
-  för vald dag till höger, sju dagar framåt. Listan hoppar automatiskt till det
-  som sänds nu, och **Watch this channel** byter kanal i huvudfönstret.
+solves this by embedding the VLC engine as a resource inside the assembly.
 
-Guidefönstret är modeslöst med flit — poängen är att kunna bläddra i tablån medan
-en kanal fortsätter spela.
+Windows.UI/VlcRuntime.cs extracts the engine during the first launch and provides LibVLCSharp with an explicit path.
 
-### Kanalmatchning
+Extraction takes place in a temporary neighboring directory and is only moved into place after the extraction has completed successfully. This prevents an interrupted first launch from leaving behind a partially extracted VLC installation.
 
-`tvg-id` används när den finns och guiden känner igen den. Annars faller appen
-tillbaka på namnmatchning, som normaliserar bort det IPTV-listor brukar hänga på:
-landsprefix (`SE:`, `|SE|`, `[US]`), kvalitetssuffix (`HD`, `FHD`, `4K`), accenter
-och skiljetecken. `SE: SVT 1 HD` och `svt1` blir båda `svt1`.
+The runtime directory also includes the VLC version in its name. When VLC is upgraded, a new runtime directory is therefore created instead of mixing plugins from different VLC versions.
 
-Kolonformen kapas bara för en tvåbokstavskod, så en kanal som faktiskt heter
-`MTV: Hits` behåller sitt namn. Statusraden visar hur många kanaler som matchade,
-t.ex. `Guide: 118/240 channels`.
+Adding Channels
 
-### Prestanda
+Go to:
 
-XMLTV-filer på 50–200 MB är normalt. Parsern är strömmande och bygger aldrig en
-DOM, och den kastar poster för kanaler som inte finns i din playlist *medan* den
-läser — det är den enskilt största besparingen. Bara ett fönster på 12 timmar bakåt
-och 8 dagar framåt behålls.
+Settings → Playlists → Add
 
-Nedladdningen cachas i `%LOCALAPPDATA%\OpenTv\epg\` i sex timmar. Misslyckas en
-uppdatering används den gamla kopian hellre än att lämna dig utan guide.
+Three source types are available:
 
-### Testdata
+Type	Fields
+M3uUrl	URL to an M3U/M3U8 playlist
+M3uFile	Path to a local .m3u file
+Xtream	Server address, username, and password
+Xtream Connection Test
 
-`samples/generate-test-epg.ps1` genererar en XMLTV-fil som matchar test-playlisten:
+Xtream sources provide a Test connection button.
 
-```bash
+It authenticates against the panel and displays:
+
+Account status
+Expiration date
+Number of simultaneous connections
+
+This makes it possible to detect incorrect credentials before attempting playback.
+
+Test Playlist
+
+The repository contains:
+
+samples/test-playlist.m3u
+
+
+It contains four public test streams:
+
+Apple BipBop
+Big Buck Bunny
+Tears of Steel
+Sintel
+
+The test playlist is already configured in:
+
+%APPDATA%\OpenTv\sources.json
+
+TV Guide / EPG
+
+An XMLTV EPG can be configured under a playlist's XMLTV EPG URL field.
+
+The field is optional.
+
+If it is not configured, OpenTv attempts to use the guide URL advertised by the source.
+
+M3U
+
+The application checks:
+
+url-tvg
+x-tvg-url
+
+
+on the #EXTM3U line.
+
+Xtream
+
+For Xtream sources, the account's xmltv.php endpoint is generated automatically.
+
+Supported Formats
+
+The guide supports:
+
+.xml
+.xml.gz
+Local XMLTV files
+Remote XMLTV URLs
+
+Gzip is detected using magic bytes rather than the file extension because IPTV providers frequently use incorrect extensions.
+
+Guide Views
+
+EPG information appears in two places.
+
+Channel List
+
+The channel list displays:
+
+Currently airing program
+Progress bar
+TV Guide Window
+
+The TV guide button opens a separate window containing:
+
+Channels on the left
+Schedule for the selected day on the right
+Seven days of programming
+Automatic scrolling to the currently airing program
+Watch this channel action
+
+The guide window is intentionally modeless. This allows the user to browse the schedule while continuing to watch the current channel.
+
+Channel Matching
+
+tvg-id is used when available and recognized by the guide.
+
+If no matching ID is available, OpenTv falls back to channel-name matching.
+
+Names are normalized to handle common IPTV naming conventions:
+
+Country prefixes: SE:, |SE|, [US]
+Quality suffixes: HD, FHD, 4K
+Accents
+Punctuation
+
+For example:
+
+SE: SVT 1 HD
+
+
+and:
+
+svt1
+
+
+both normalize to:
+
+svt1
+
+
+Colon-separated names are only stripped when the prefix is a two-letter country code. A channel named:
+
+MTV: Hits
+
+
+therefore keeps its name.
+
+The status bar reports the number of matched channels:
+
+Guide: 118/240 channels
+
+EPG Performance
+
+XMLTV files between 50 and 200 MB are normal.
+
+The parser is streaming-based and never builds a complete DOM.
+
+Entries for channels that do not exist in the user's playlist are discarded while the file is being read. This provides the largest memory saving.
+
+Only the following EPG window is retained:
+
+12 hours into the past
+8 days into the future
+EPG Cache
+
+Downloaded EPG data is cached in:
+
+%LOCALAPPDATA%\OpenTv\epg\
+
+
+The cache duration is six hours.
+
+If an EPG update fails, the previous cached copy is used instead of leaving the application without a guide.
+
+Generating Test EPG Data
+
+The repository contains:
+
+samples/generate-test-epg.ps1
+
+
+Run it with:
+
 pwsh samples/generate-test-epg.ps1
-```
 
-Den utgår från dagens datum, så kör om den när filen blivit gammal.
-`-SlotMinutes 5` ger en tätare tablå, vilket är praktiskt för att testa scrollning.
 
----
+The generated guide uses the current date, so regenerate it when the existing test data becomes outdated.
 
-## Var data sparas
+For a denser schedule that is useful for testing scrolling:
 
-Allt ligger under `%APPDATA%\OpenTv\`:
+pwsh samples/generate-test-epg.ps1 -SlotMinutes 5
 
-| Fil | Innehåll |
-|---|---|
-| `sources.json` | Playlist-profiler, senast använd kanal, volym |
-| `vpn-profiles.json` | VPN-profilernas metadata (namn, typ, sökväg) |
-| `vpn\*.conf` | Importerade WireGuard-konfigurationer |
-| `crash.log` | Skrivs bara om appen kraschar vid start |
+Data Storage
 
-Regenererbara filer ligger separat i `%LOCALAPPDATA%\OpenTv\` och kan raderas när
-som helst: `epg\` (cachade guide-nedladdningar) och `runtime\` (den uppackade
-VLC-motorn i enfilsutgåvan).
+Persistent application data is stored under:
 
-Skrivningar går via en temporärfil och byts in atomärt, så en krasch mitt i en
-sparning kan inte lämna en trasig config. En config som ändå blir korrupt döps om
-till `.corrupt` och appen startar med tomma inställningar i stället för att vägra starta.
+%APPDATA%\OpenTv\
 
-### Xtream-lösenord
+File	Contents
+sources.json	Playlist profiles, last-used channel, volume
+vpn-profiles.json	VPN profile metadata (name, type, path)
+vpn\*.conf	Imported WireGuard configurations
+crash.log	Only written when the application crashes during startup
 
-Lösenord krypteras med **Windows DPAPI** bundet till ditt användarkonto innan de
-skrivs till `sources.json`. Kopieras filen till en annan maskin eller ett annat
-konto går den inte att dekryptera — appen frågar då efter lösenordet igen i stället
-för att skicka chiffertext till leverantören.
+Regenerable data is stored separately under:
 
-Klartext-lösenord från en äldre `sources.json` läses fortfarande, och krypteras
-automatiskt nästa gång profilen sparas.
+%LOCALAPPDATA%\OpenTv\
 
-> Observera: Xtream-protokollet skickar användarnamn och lösenord som
-> **query-parametrar i URL:en**. Så fungerar alla Xtream-paneler — det är inget val
-> som gjorts här. Därför redigeras request-URL:er bort ur alla felmeddelanden, så
-> att ett lösenord aldrig kan hamna i en logg.
+Directory	Contents
+epg\	Cached EPG downloads
+runtime\	Extracted VLC engine used by the single-file build
 
----
+These directories can be safely deleted. They will be recreated when required.
 
-## Så fungerar VPN-integrationen
+Atomic Configuration Writes
 
-Valet blev att **styra de officiella binärerna** i stället för att bädda in
-WireGuardNT via P/Invoke. Det ger signerade drivrutiner utan eget underhåll.
+Configuration files are written to a temporary file and then swapped into place atomically.
 
-* **Anslut** kör `wireguard.exe /installtunnelservice <config>`, vilket registrerar
-  och startar Windows-tjänsten `WireGuardTunnel$<namn>`.
-* **Koppla ner** kör `wireguard.exe /uninstalltunnelservice <namn>`.
-* Appen litar inte på processens exit-kod utan **pollar tjänstens verkliga tillstånd**
-  innan den påstår att tunneln är uppe.
+This prevents a crash during saving from leaving behind a partially written configuration.
 
-Tunnelnamnet är konfigurationsfilens basnamn — så härleder `wireguard.exe` det.
-Därför saneras namnet vid import (`My VPN (Sweden)!` → `My-VPN-Sweden`) och görs
-unikt, eftersom det också blir en del av ett Windows-tjänstnamn.
+If a configuration is nevertheless corrupted, OpenTv renames it to:
 
-### UAC
+*.corrupt
 
-Appen körs som vanlig användare (`asInvoker` i `app.manifest`) — att tvinga hela
-mediaspelaren att köra som administratör vore dålig praxis. Enbart tunnel-kommandona
-höjer rättigheter, via `ShellExecute` med verbet `runas`. Du får alltså **en
-UAC-prompt per anslutning/nedkoppling**, inte en vid appstart. Avbryter du prompten
-rapporteras det som ett tydligt fel i stället för att tolkas som lyckat.
 
-### Tunneln överlever appen
+and starts with empty settings instead of refusing to launch.
 
-Att stänga OpenTv river **inte** tunneln. Det är avsiktligt: alternativet är att
-användaren plötsligt hamnar på sin bara uppkoppling utan förvarning. Vid start
-adopterar appen en tunnel som redan är uppe (`RefreshAsync`), och en watchdog var
-femte sekund märker om tunneln stoppats utifrån.
+Xtream Password Security
 
----
+Xtream passwords are encrypted using Windows DPAPI and bound to the current Windows user account before being written to sources.json.
 
-## Kända begränsningar
+If the configuration file is copied to another machine or Windows user account, the password cannot be decrypted.
 
-* **Kanallogotyper visas inte.** Xtream levererar `stream_icon` och M3U levererar
-  `tvg-logo`, och båda sparas på `Channel` — men att rendera dem kräver en asynkron
-  bildladdare för fjärr-URL:er.
-* **Kontrollerna ligger under videon, inte ovanpå.** `VideoView` är ett nativt
-  barnfönster, så Avalonia kan inte komposita ovanpå det. En TiviMate-liknande
-  overlay kräver antingen `VideoView.Content` eller rendering via `WriteableBitmap`.
-* **"Ansluten" = tjänsten kör.** Det bevisar att adaptern är uppe, men ännu inte att
-  handskakningen med peern lyckats. Det kräver `wg show`.
-* **Xtream: bara live-TV.** VOD och serier använder andra `action`-anrop
-  (`get_vod_streams`, `get_series`) och är inte implementerade.
-* **TV-guiden är en tablå per kanal, inte ett tidslinjeraster.** Den visar en kanal
-  i taget, inte TiviMates rutnät med alla kanaler mot en tidsaxel. Ett sådant raster
-  kräver en egen virtualiserad layout-panel.
-* Sidopanelen har fast bredd (330 px), ingen splitter.
+OpenTv then asks for the password again rather than sending encrypted data to the provider.
 
-## Vad som återstår
+Plain-text passwords from older sources.json files remain supported. They are automatically encrypted the next time the profile is saved.
 
-1. **OpenVPN** — `IVpnService`-kontraktet och `VpnManager`-routingen finns redan på
-   plats; implementationen ska styra en `openvpn.exe`-process via dess
-   management-interface (TCP-socket) för realtidsstatus och loggar.
-2. **Tidslinjeraster i guiden** — kanaler som rader mot en tidsaxel, TiviMate-stil.
-   All data finns redan i `EpgGuide`; det som saknas är layout-panelen.
-3. **Enhetstester** — `M3uParser`, `XtreamClient` och `XmltvParser` är verifierade
-   med engångsharnesser (se nedan) men förtjänar riktiga tester i repot, eftersom de
-   ska återanvändas på mobil.
+Important: The Xtream protocol sends usernames and passwords as query parameters in the URL. This is how Xtream panels work and is not specific to OpenTv. Request URLs are therefore removed from error messages so passwords cannot accidentally appear in logs.
 
----
+VPN Integration
 
-## Verifiering som gjorts
+OpenTv controls the official WireGuard binaries rather than embedding WireGuardNT through P/Invoke.
 
-| Område | Resultat |
-|---|---|
-| M3U-parsning | Komma i kanalnamn, `#EXTGRP`, `#EXTVLCOPT`, dubbletter, trasiga rader |
-| Xtream-klient | 22 kontroller mot en mock-panel med inkonsekventa JSON-typer |
-| XMLTV / EPG | 35 kontroller: tidsstämpelformat, namnnormalisering, kanalfiltrering, nu/nästa, gzip, XXE-skydd |
-| WireGuard | Full tunnel-livscykel: import → connect → tjänst + nätverksadapter skapade → adoptera vid omstart → disconnect → allt borttaget |
-| DPAPI | Round-trip verifierad; fel entropi avvisas |
-| Uppspelning | HLS-teststream, inbäddad i fönstret, D3D11VA-hårdvaruavkodning |
-| Publicering | Båda lägena verifierade: enfils-exe (88 MB — kall start packar upp motorn på 1 s, varm start omedelbar) och mapp-utgåva |
+This provides signed drivers without requiring OpenTv to maintain its own driver.
+
+Connecting
+
+The application runs:
+
+wireguard.exe /installtunnelservice <config>
+
+
+This registers and starts:
+
+WireGuardTunnel$<name>
+
+
+as a Windows service.
+
+Disconnecting
+
+The application runs:
+
+wireguard.exe /uninstalltunnelservice <name>
+
+
+OpenTv does not rely on the process exit code to determine whether the tunnel is active.
+
+Instead, it polls the actual Windows service state before reporting that the tunnel is connected.
+
+Tunnel Naming
+
+The tunnel name is derived from the configuration filename by wireguard.exe.
+
+For this reason, names are sanitized during import.
+
+For example:
+
+My VPN (Sweden)!
+
+
+becomes:
+
+My-VPN-Sweden
+
+
+Names are also made unique because the tunnel name becomes part of the Windows service name.
+
+UAC
+
+OpenTv runs as a normal user using:
+
+asInvoker
+
+
+in app.manifest.
+
+The entire media player does not run as administrator.
+
+Only tunnel operations require elevation. They use ShellExecute with the runas verb.
+
+As a result, users receive:
+
+One UAC prompt per connect/disconnect operation
+
+rather than a UAC prompt every time the application starts.
+
+If the user cancels the UAC prompt, OpenTv reports a clear error rather than incorrectly treating the operation as successful.
+
+VPN Tunnel Persistence
+
+Closing OpenTv does not disconnect the VPN tunnel.
+
+This is intentional. Disconnecting automatically when the application closes could unexpectedly expose the user's normal network connection.
+
+When OpenTv starts, it detects and adopts an already-running tunnel through:
+
+RefreshAsync
+
+
+A watchdog checks the tunnel every five seconds and detects if it has been stopped externally.
+
+Known Limitations
+Channel Logos
+
+Channel logos are not currently displayed.
+
+Xtream provides:
+
+stream_icon
+
+
+and M3U provides:
+
+tvg-logo
+
+
+Both values are stored on Channel, but displaying remote logos requires an asynchronous image loader.
+
+Video Controls
+
+Controls are displayed below the video rather than overlaid on top of it.
+
+VideoView is a native child window, which prevents Avalonia from compositing controls over it.
+
+A TiviMate-style overlay would require either:
+
+VideoView.Content
+Rendering through WriteableBitmap
+WireGuard Connection Status
+
+"Connected" currently means that the WireGuard service is running.
+
+This confirms that the adapter is active but does not prove that the handshake with the peer succeeded.
+
+Verifying the handshake requires:
+
+wg show
+
+Xtream
+
+Only live TV is currently supported.
+
+VOD and series require additional Xtream actions:
+
+get_vod_streams
+get_series
+
+
+These are not implemented yet.
+
+TV Guide Layout
+
+The current TV guide displays one channel at a time.
+
+It does not yet provide a TiviMate-style timeline grid showing all channels against a shared time axis.
+
+Implementing this requires a custom virtualized layout panel.
+
+Sidebar
+
+The sidebar currently has a fixed width of:
+
+330 px
+
+
+There is no splitter.
+
+What's Remaining
+1. OpenVPN
+
+The IVpnService contract and VpnManager routing are already in place.
+
+The remaining implementation should control an openvpn.exe process through its management interface using a TCP socket.
+
+This will provide:
+
+Real-time connection status
+Connection events
+Logs
+2. Timeline Grid
+
+Implement a TiviMate-style EPG timeline:
+
+Channel 1  | Program       | Program       | Program
+Channel 2  |     Program   | Program       | Program
+Channel 3  | Program       |      Program  | Program
+           +---------------+---------------+-------->
+                         Time
+
+
+All required EPG data already exists in EpgGuide.
+
+Only the layout panel is missing.
+
+3. Unit Tests
+
+The following components have been verified using one-off test harnesses:
+
+M3uParser
+XtreamClient
+XmltvParser
+
+They should be converted into proper repository tests because these components are intended to be reused on mobile platforms.
+
+Verification
+Area	Result
+M3U parsing	Commas in channel names, #EXTGRP, #EXTVLCOPT, duplicates, malformed lines
+Xtream client	22 checks against a mock panel with inconsistent JSON types
+XMLTV / EPG	35 checks covering timestamp formats, name normalization, channel filtering, now/next, gzip, and XXE protection
+WireGuard	Full tunnel lifecycle: import → connect → service + network adapter created → adopt after restart → disconnect → everything removed
+DPAPI	Round-trip verified; incorrect entropy rejected
+Playback	HLS test stream, embedded in window, D3D11VA hardware decoding
+Publishing	Both modes verified: single-file .exe (88 MB; cold start extracts the engine in ~1 second, warm start is immediate) and folder deployment
+License
+
+Add the project's license information here.
+
+If the project is not yet licensed, consider adding a LICENSE file before distributing OpenTv publicly.
