@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <AssemblyName>OpenTv.Windows.Vpn</AssemblyName>
+    <RootNamespace>OpenTv.Windows.Vpn</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ServiceProcess.ServiceController" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\OpenTv.Core.csproj" />
+    <ProjectReference Include="..\Core.Vpn\OpenTv.Core.Vpn.csproj" />
+  </ItemGroup>
+
+</Project>

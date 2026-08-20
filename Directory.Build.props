@@ -1,0 +1,16 @@
+<Project>
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <Product>OpenTv</Product>
+    <Company>OpenTv</Company>
+    <Version>0.1.0</Version>
+    <!-- Central place to bump third-party versions for every project. -->
+    <AvaloniaVersion>11.3.20</AvaloniaVersion>
+    <LibVlcSharpVersion>3.10.1</LibVlcSharpVersion>
+    <!-- Native VLC engine. Referenced in two places (package + embed target), so it lives here. -->
+    <LibVlcNativeVersion>3.0.21</LibVlcNativeVersion>
+  </PropertyGroup>
+</Project>

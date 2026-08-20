@@ -1,0 +1,11 @@
+#EXTM3U url-tvg=""
+# Public test streams for verifying playback. Not IPTV channels - these are the
+# reference HLS/DASH samples published by Apple, Mux and Unified Streaming.
+#EXTINF:-1 tvg-id="bipbop" tvg-name="Apple BipBop" group-title="Test streams" tvg-chno="1",Apple BipBop (HLS, multi-bitrate)
+https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8
+#EXTINF:-1 tvg-id="bbb" tvg-name="Big Buck Bunny" group-title="Test streams" tvg-chno="2",Big Buck Bunny (HLS, Mux)
+https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
+#EXTINF:-1 tvg-id="tears" tvg-name="Tears of Steel" group-title="Test streams" tvg-chno="3",Tears of Steel (HLS)
+https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8
+#EXTINF:-1 tvg-id="sintel" tvg-name="Sintel" group-title="Test streams" tvg-chno="4",Sintel (HLS, Mux)
+https://test-streams.mux.dev/pts_shift/master.m3u8

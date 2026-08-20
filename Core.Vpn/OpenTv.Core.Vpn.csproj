@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Contracts only. Platform-neutral so an Android/iOS head can implement
+         IVpnService against its own VPN APIs without touching this assembly. -->
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>OpenTv.Core.Vpn</AssemblyName>
+    <RootNamespace>OpenTv.Core.Vpn</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\OpenTv.Core.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,2706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tv generator-info-name="OpenTv sample generator">
+  <channel id="bipbop">
+    <display-name>Apple BipBop</display-name>
+    <icon src="https://example.org/logos/bipbop.png" />
+  </channel>
+  <channel id="bbb">
+    <display-name>Big Buck Bunny</display-name>
+    <icon src="https://example.org/logos/bbb.png" />
+  </channel>
+  <channel id="tears">
+    <display-name>Tears of Steel</display-name>
+  </channel>
+  <channel id="sintel">
+    <display-name>Sintel</display-name>
+  </channel>
+  <programme start="20260819000000 -0700" stop="20260819004500 -0700" channel="bipbop">
+    <title lang="en">Test Pattern Live</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Test Pattern Live on Apple BipBop, starting at 00:00 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.0.</episode-num>
+  </programme>
+  <programme start="20260819004500 -0700" stop="20260819013000 -0700" channel="bipbop">
+    <title lang="en">Colour Bars</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Colour Bars on Apple BipBop, starting at 00:45 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.1.</episode-num>
+  </programme>
+  <programme start="20260819013000 -0700" stop="20260819021500 -0700" channel="bipbop">
+    <title lang="en">Timecode Hour</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Timecode Hour on Apple BipBop, starting at 01:30 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.2.</episode-num>
+  </programme>
+  <programme start="20260819021500 -0700" stop="20260819030000 -0700" channel="bipbop">
+    <title lang="en">Engineering Feed</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Engineering Feed on Apple BipBop, starting at 02:15 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.3.</episode-num>
+  </programme>
+  <programme start="20260819030000 -0700" stop="20260819034500 -0700" channel="bipbop">
+    <title lang="en">Test Pattern Live</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Test Pattern Live on Apple BipBop, starting at 03:00 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.4.</episode-num>
+  </programme>
+  <programme start="20260819034500 -0700" stop="20260819043000 -0700" channel="bipbop">
+    <title lang="en">Colour Bars</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Colour Bars on Apple BipBop, starting at 03:45 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.5.</episode-num>
+  </programme>
+  <programme start="20260819043000 -0700" stop="20260819051500 -0700" channel="bipbop">
+    <title lang="en">Timecode Hour</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Timecode Hour on Apple BipBop, starting at 04:30 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.6.</episode-num>
+  </programme>
+  <programme start="20260819051500 -0700" stop="20260819060000 -0700" channel="bipbop">
+    <title lang="en">Engineering Feed</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Engineering Feed on Apple BipBop, starting at 05:15 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.7.</episode-num>
+  </programme>
+  <programme start="20260819060000 -0700" stop="20260819064500 -0700" channel="bipbop">
+    <title lang="en">Test Pattern Live</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Test Pattern Live on Apple BipBop, starting at 06:00 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.8.</episode-num>
+  </programme>
+  <programme start="20260819064500 -0700" stop="20260819073000 -0700" channel="bipbop">
+    <title lang="en">Colour Bars</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Colour Bars on Apple BipBop, starting at 06:45 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.9.</episode-num>
+  </programme>
+  <programme start="20260819073000 -0700" stop="20260819081500 -0700" channel="bipbop">
+    <title lang="en">Timecode Hour</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Timecode Hour on Apple BipBop, starting at 07:30 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.10.</episode-num>
+  </programme>
+  <programme start="20260819081500 -0700" stop="20260819090000 -0700" channel="bipbop">
+    <title lang="en">Engineering Feed</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Engineering Feed on Apple BipBop, starting at 08:15 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.11.</episode-num>
+  </programme>
+  <programme start="20260819090000 -0700" stop="20260819094500 -0700" channel="bipbop">
+    <title lang="en">Test Pattern Live</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Test Pattern Live on Apple BipBop, starting at 09:00 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.12.</episode-num>
+  </programme>
+  <programme start="20260819094500 -0700" stop="20260819103000 -0700" channel="bipbop">
+    <title lang="en">Colour Bars</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Colour Bars on Apple BipBop, starting at 09:45 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.13.</episode-num>
+  </programme>
+  <programme start="20260819103000 -0700" stop="20260819111500 -0700" channel="bipbop">
+    <title lang="en">Timecode Hour</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Timecode Hour on Apple BipBop, starting at 10:30 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.14.</episode-num>
+  </programme>
+  <programme start="20260819111500 -0700" stop="20260819120000 -0700" channel="bipbop">
+    <title lang="en">Engineering Feed</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Engineering Feed on Apple BipBop, starting at 11:15 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.15.</episode-num>
+  </programme>
+  <programme start="20260819120000 -0700" stop="20260819124500 -0700" channel="bipbop">
+    <title lang="en">Test Pattern Live</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Test Pattern Live on Apple BipBop, starting at 12:00 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.16.</episode-num>
+  </programme>
+  <programme start="20260819124500 -0700" stop="20260819133000 -0700" channel="bipbop">
+    <title lang="en">Colour Bars</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Colour Bars on Apple BipBop, starting at 12:45 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.17.</episode-num>
+  </programme>
+  <programme start="20260819133000 -0700" stop="20260819141500 -0700" channel="bipbop">
+    <title lang="en">Timecode Hour</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Timecode Hour on Apple BipBop, starting at 13:30 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.18.</episode-num>
+  </programme>
+  <programme start="20260819141500 -0700" stop="20260819150000 -0700" channel="bipbop">
+    <title lang="en">Engineering Feed</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Engineering Feed on Apple BipBop, starting at 14:15 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.19.</episode-num>
+  </programme>
+  <programme start="20260819150000 -0700" stop="20260819154500 -0700" channel="bipbop">
+    <title lang="en">Test Pattern Live</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Test Pattern Live on Apple BipBop, starting at 15:00 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.20.</episode-num>
+  </programme>
+  <programme start="20260819154500 -0700" stop="20260819163000 -0700" channel="bipbop">
+    <title lang="en">Colour Bars</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Colour Bars on Apple BipBop, starting at 15:45 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.21.</episode-num>
+  </programme>
+  <programme start="20260819163000 -0700" stop="20260819171500 -0700" channel="bipbop">
+    <title lang="en">Timecode Hour</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Timecode Hour on Apple BipBop, starting at 16:30 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.22.</episode-num>
+  </programme>
+  <programme start="20260819171500 -0700" stop="20260819180000 -0700" channel="bipbop">
+    <title lang="en">Engineering Feed</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Engineering Feed on Apple BipBop, starting at 17:15 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.23.</episode-num>
+  </programme>
+  <programme start="20260819180000 -0700" stop="20260819184500 -0700" channel="bipbop">
+    <title lang="en">Test Pattern Live</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Test Pattern Live on Apple BipBop, starting at 18:00 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.24.</episode-num>
+  </programme>
+  <programme start="20260819184500 -0700" stop="20260819193000 -0700" channel="bipbop">
+    <title lang="en">Colour Bars</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Colour Bars on Apple BipBop, starting at 18:45 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.25.</episode-num>
+  </programme>
+  <programme start="20260819193000 -0700" stop="20260819201500 -0700" channel="bipbop">
+    <title lang="en">Timecode Hour</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Timecode Hour on Apple BipBop, starting at 19:30 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.26.</episode-num>
+  </programme>
+  <programme start="20260819201500 -0700" stop="20260819210000 -0700" channel="bipbop">
+    <title lang="en">Engineering Feed</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Engineering Feed on Apple BipBop, starting at 20:15 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.27.</episode-num>
+  </programme>
+  <programme start="20260819210000 -0700" stop="20260819214500 -0700" channel="bipbop">
+    <title lang="en">Test Pattern Live</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Test Pattern Live on Apple BipBop, starting at 21:00 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.28.</episode-num>
+  </programme>
+  <programme start="20260819214500 -0700" stop="20260819223000 -0700" channel="bipbop">
+    <title lang="en">Colour Bars</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Colour Bars on Apple BipBop, starting at 21:45 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.29.</episode-num>
+  </programme>
+  <programme start="20260819223000 -0700" stop="20260819231500 -0700" channel="bipbop">
+    <title lang="en">Timecode Hour</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Timecode Hour on Apple BipBop, starting at 22:30 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.30.</episode-num>
+  </programme>
+  <programme start="20260819231500 -0700" stop="20260820000000 -0700" channel="bipbop">
+    <title lang="en">Engineering Feed</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Engineering Feed on Apple BipBop, starting at 23:15 on Wednesday 19 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.31.</episode-num>
+  </programme>
+  <programme start="20260820000000 -0700" stop="20260820004500 -0700" channel="bipbop">
+    <title lang="en">Test Pattern Live</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Test Pattern Live on Apple BipBop, starting at 00:00 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.32.</episode-num>
+  </programme>
+  <programme start="20260820004500 -0700" stop="20260820013000 -0700" channel="bipbop">
+    <title lang="en">Colour Bars</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Colour Bars on Apple BipBop, starting at 00:45 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.33.</episode-num>
+  </programme>
+  <programme start="20260820013000 -0700" stop="20260820021500 -0700" channel="bipbop">
+    <title lang="en">Timecode Hour</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Timecode Hour on Apple BipBop, starting at 01:30 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.34.</episode-num>
+  </programme>
+  <programme start="20260820021500 -0700" stop="20260820030000 -0700" channel="bipbop">
+    <title lang="en">Engineering Feed</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Engineering Feed on Apple BipBop, starting at 02:15 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.35.</episode-num>
+  </programme>
+  <programme start="20260820030000 -0700" stop="20260820034500 -0700" channel="bipbop">
+    <title lang="en">Test Pattern Live</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Test Pattern Live on Apple BipBop, starting at 03:00 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.36.</episode-num>
+  </programme>
+  <programme start="20260820034500 -0700" stop="20260820043000 -0700" channel="bipbop">
+    <title lang="en">Colour Bars</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Colour Bars on Apple BipBop, starting at 03:45 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.37.</episode-num>
+  </programme>
+  <programme start="20260820043000 -0700" stop="20260820051500 -0700" channel="bipbop">
+    <title lang="en">Timecode Hour</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Timecode Hour on Apple BipBop, starting at 04:30 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.38.</episode-num>
+  </programme>
+  <programme start="20260820051500 -0700" stop="20260820060000 -0700" channel="bipbop">
+    <title lang="en">Engineering Feed</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Engineering Feed on Apple BipBop, starting at 05:15 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.39.</episode-num>
+  </programme>
+  <programme start="20260820060000 -0700" stop="20260820064500 -0700" channel="bipbop">
+    <title lang="en">Test Pattern Live</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Test Pattern Live on Apple BipBop, starting at 06:00 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.40.</episode-num>
+  </programme>
+  <programme start="20260820064500 -0700" stop="20260820073000 -0700" channel="bipbop">
+    <title lang="en">Colour Bars</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Colour Bars on Apple BipBop, starting at 06:45 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.41.</episode-num>
+  </programme>
+  <programme start="20260820073000 -0700" stop="20260820081500 -0700" channel="bipbop">
+    <title lang="en">Timecode Hour</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Timecode Hour on Apple BipBop, starting at 07:30 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.42.</episode-num>
+  </programme>
+  <programme start="20260820081500 -0700" stop="20260820090000 -0700" channel="bipbop">
+    <title lang="en">Engineering Feed</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Engineering Feed on Apple BipBop, starting at 08:15 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.43.</episode-num>
+  </programme>
+  <programme start="20260820090000 -0700" stop="20260820094500 -0700" channel="bipbop">
+    <title lang="en">Test Pattern Live</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Test Pattern Live on Apple BipBop, starting at 09:00 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.44.</episode-num>
+  </programme>
+  <programme start="20260820094500 -0700" stop="20260820103000 -0700" channel="bipbop">
+    <title lang="en">Colour Bars</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Colour Bars on Apple BipBop, starting at 09:45 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.45.</episode-num>
+  </programme>
+  <programme start="20260820103000 -0700" stop="20260820111500 -0700" channel="bipbop">
+    <title lang="en">Timecode Hour</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Timecode Hour on Apple BipBop, starting at 10:30 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.46.</episode-num>
+  </programme>
+  <programme start="20260820111500 -0700" stop="20260820120000 -0700" channel="bipbop">
+    <title lang="en">Engineering Feed</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Engineering Feed on Apple BipBop, starting at 11:15 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.47.</episode-num>
+  </programme>
+  <programme start="20260820120000 -0700" stop="20260820124500 -0700" channel="bipbop">
+    <title lang="en">Test Pattern Live</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Test Pattern Live on Apple BipBop, starting at 12:00 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.48.</episode-num>
+  </programme>
+  <programme start="20260820124500 -0700" stop="20260820133000 -0700" channel="bipbop">
+    <title lang="en">Colour Bars</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Colour Bars on Apple BipBop, starting at 12:45 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.49.</episode-num>
+  </programme>
+  <programme start="20260820133000 -0700" stop="20260820141500 -0700" channel="bipbop">
+    <title lang="en">Timecode Hour</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Timecode Hour on Apple BipBop, starting at 13:30 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.50.</episode-num>
+  </programme>
+  <programme start="20260820141500 -0700" stop="20260820150000 -0700" channel="bipbop">
+    <title lang="en">Engineering Feed</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Engineering Feed on Apple BipBop, starting at 14:15 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.51.</episode-num>
+  </programme>
+  <programme start="20260820150000 -0700" stop="20260820154500 -0700" channel="bipbop">
+    <title lang="en">Test Pattern Live</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Test Pattern Live on Apple BipBop, starting at 15:00 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.52.</episode-num>
+  </programme>
+  <programme start="20260820154500 -0700" stop="20260820163000 -0700" channel="bipbop">
+    <title lang="en">Colour Bars</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Colour Bars on Apple BipBop, starting at 15:45 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.53.</episode-num>
+  </programme>
+  <programme start="20260820163000 -0700" stop="20260820171500 -0700" channel="bipbop">
+    <title lang="en">Timecode Hour</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Timecode Hour on Apple BipBop, starting at 16:30 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.54.</episode-num>
+  </programme>
+  <programme start="20260820171500 -0700" stop="20260820180000 -0700" channel="bipbop">
+    <title lang="en">Engineering Feed</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Engineering Feed on Apple BipBop, starting at 17:15 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.55.</episode-num>
+  </programme>
+  <programme start="20260820180000 -0700" stop="20260820184500 -0700" channel="bipbop">
+    <title lang="en">Test Pattern Live</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Test Pattern Live on Apple BipBop, starting at 18:00 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.56.</episode-num>
+  </programme>
+  <programme start="20260820184500 -0700" stop="20260820193000 -0700" channel="bipbop">
+    <title lang="en">Colour Bars</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Colour Bars on Apple BipBop, starting at 18:45 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.57.</episode-num>
+  </programme>
+  <programme start="20260820193000 -0700" stop="20260820201500 -0700" channel="bipbop">
+    <title lang="en">Timecode Hour</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Timecode Hour on Apple BipBop, starting at 19:30 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.58.</episode-num>
+  </programme>
+  <programme start="20260820201500 -0700" stop="20260820210000 -0700" channel="bipbop">
+    <title lang="en">Engineering Feed</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Engineering Feed on Apple BipBop, starting at 20:15 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.59.</episode-num>
+  </programme>
+  <programme start="20260820210000 -0700" stop="20260820214500 -0700" channel="bipbop">
+    <title lang="en">Test Pattern Live</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Test Pattern Live on Apple BipBop, starting at 21:00 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.60.</episode-num>
+  </programme>
+  <programme start="20260820214500 -0700" stop="20260820223000 -0700" channel="bipbop">
+    <title lang="en">Colour Bars</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Colour Bars on Apple BipBop, starting at 21:45 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.61.</episode-num>
+  </programme>
+  <programme start="20260820223000 -0700" stop="20260820231500 -0700" channel="bipbop">
+    <title lang="en">Timecode Hour</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Timecode Hour on Apple BipBop, starting at 22:30 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.62.</episode-num>
+  </programme>
+  <programme start="20260820231500 -0700" stop="20260821000000 -0700" channel="bipbop">
+    <title lang="en">Engineering Feed</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Engineering Feed on Apple BipBop, starting at 23:15 on Thursday 20 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.63.</episode-num>
+  </programme>
+  <programme start="20260821000000 -0700" stop="20260821004500 -0700" channel="bipbop">
+    <title lang="en">Test Pattern Live</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Test Pattern Live on Apple BipBop, starting at 00:00 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.64.</episode-num>
+  </programme>
+  <programme start="20260821004500 -0700" stop="20260821013000 -0700" channel="bipbop">
+    <title lang="en">Colour Bars</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Colour Bars on Apple BipBop, starting at 00:45 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.65.</episode-num>
+  </programme>
+  <programme start="20260821013000 -0700" stop="20260821021500 -0700" channel="bipbop">
+    <title lang="en">Timecode Hour</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Timecode Hour on Apple BipBop, starting at 01:30 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.66.</episode-num>
+  </programme>
+  <programme start="20260821021500 -0700" stop="20260821030000 -0700" channel="bipbop">
+    <title lang="en">Engineering Feed</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Engineering Feed on Apple BipBop, starting at 02:15 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.67.</episode-num>
+  </programme>
+  <programme start="20260821030000 -0700" stop="20260821034500 -0700" channel="bipbop">
+    <title lang="en">Test Pattern Live</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Test Pattern Live on Apple BipBop, starting at 03:00 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.68.</episode-num>
+  </programme>
+  <programme start="20260821034500 -0700" stop="20260821043000 -0700" channel="bipbop">
+    <title lang="en">Colour Bars</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Colour Bars on Apple BipBop, starting at 03:45 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.69.</episode-num>
+  </programme>
+  <programme start="20260821043000 -0700" stop="20260821051500 -0700" channel="bipbop">
+    <title lang="en">Timecode Hour</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Timecode Hour on Apple BipBop, starting at 04:30 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.70.</episode-num>
+  </programme>
+  <programme start="20260821051500 -0700" stop="20260821060000 -0700" channel="bipbop">
+    <title lang="en">Engineering Feed</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Engineering Feed on Apple BipBop, starting at 05:15 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.71.</episode-num>
+  </programme>
+  <programme start="20260821060000 -0700" stop="20260821064500 -0700" channel="bipbop">
+    <title lang="en">Test Pattern Live</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Test Pattern Live on Apple BipBop, starting at 06:00 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.72.</episode-num>
+  </programme>
+  <programme start="20260821064500 -0700" stop="20260821073000 -0700" channel="bipbop">
+    <title lang="en">Colour Bars</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Colour Bars on Apple BipBop, starting at 06:45 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.73.</episode-num>
+  </programme>
+  <programme start="20260821073000 -0700" stop="20260821081500 -0700" channel="bipbop">
+    <title lang="en">Timecode Hour</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Timecode Hour on Apple BipBop, starting at 07:30 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.74.</episode-num>
+  </programme>
+  <programme start="20260821081500 -0700" stop="20260821090000 -0700" channel="bipbop">
+    <title lang="en">Engineering Feed</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Engineering Feed on Apple BipBop, starting at 08:15 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.75.</episode-num>
+  </programme>
+  <programme start="20260821090000 -0700" stop="20260821094500 -0700" channel="bipbop">
+    <title lang="en">Test Pattern Live</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Test Pattern Live on Apple BipBop, starting at 09:00 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.76.</episode-num>
+  </programme>
+  <programme start="20260821094500 -0700" stop="20260821103000 -0700" channel="bipbop">
+    <title lang="en">Colour Bars</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Colour Bars on Apple BipBop, starting at 09:45 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.77.</episode-num>
+  </programme>
+  <programme start="20260821103000 -0700" stop="20260821111500 -0700" channel="bipbop">
+    <title lang="en">Timecode Hour</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Timecode Hour on Apple BipBop, starting at 10:30 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.78.</episode-num>
+  </programme>
+  <programme start="20260821111500 -0700" stop="20260821120000 -0700" channel="bipbop">
+    <title lang="en">Engineering Feed</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Engineering Feed on Apple BipBop, starting at 11:15 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.79.</episode-num>
+  </programme>
+  <programme start="20260821120000 -0700" stop="20260821124500 -0700" channel="bipbop">
+    <title lang="en">Test Pattern Live</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Test Pattern Live on Apple BipBop, starting at 12:00 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.80.</episode-num>
+  </programme>
+  <programme start="20260821124500 -0700" stop="20260821133000 -0700" channel="bipbop">
+    <title lang="en">Colour Bars</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Colour Bars on Apple BipBop, starting at 12:45 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.81.</episode-num>
+  </programme>
+  <programme start="20260821133000 -0700" stop="20260821141500 -0700" channel="bipbop">
+    <title lang="en">Timecode Hour</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Timecode Hour on Apple BipBop, starting at 13:30 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.82.</episode-num>
+  </programme>
+  <programme start="20260821141500 -0700" stop="20260821150000 -0700" channel="bipbop">
+    <title lang="en">Engineering Feed</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Engineering Feed on Apple BipBop, starting at 14:15 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.83.</episode-num>
+  </programme>
+  <programme start="20260821150000 -0700" stop="20260821154500 -0700" channel="bipbop">
+    <title lang="en">Test Pattern Live</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Test Pattern Live on Apple BipBop, starting at 15:00 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.84.</episode-num>
+  </programme>
+  <programme start="20260821154500 -0700" stop="20260821163000 -0700" channel="bipbop">
+    <title lang="en">Colour Bars</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Colour Bars on Apple BipBop, starting at 15:45 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.85.</episode-num>
+  </programme>
+  <programme start="20260821163000 -0700" stop="20260821171500 -0700" channel="bipbop">
+    <title lang="en">Timecode Hour</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Timecode Hour on Apple BipBop, starting at 16:30 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.86.</episode-num>
+  </programme>
+  <programme start="20260821171500 -0700" stop="20260821180000 -0700" channel="bipbop">
+    <title lang="en">Engineering Feed</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Engineering Feed on Apple BipBop, starting at 17:15 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.87.</episode-num>
+  </programme>
+  <programme start="20260821180000 -0700" stop="20260821184500 -0700" channel="bipbop">
+    <title lang="en">Test Pattern Live</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Test Pattern Live on Apple BipBop, starting at 18:00 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.88.</episode-num>
+  </programme>
+  <programme start="20260821184500 -0700" stop="20260821193000 -0700" channel="bipbop">
+    <title lang="en">Colour Bars</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Colour Bars on Apple BipBop, starting at 18:45 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.89.</episode-num>
+  </programme>
+  <programme start="20260821193000 -0700" stop="20260821201500 -0700" channel="bipbop">
+    <title lang="en">Timecode Hour</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Timecode Hour on Apple BipBop, starting at 19:30 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.90.</episode-num>
+  </programme>
+  <programme start="20260821201500 -0700" stop="20260821210000 -0700" channel="bipbop">
+    <title lang="en">Engineering Feed</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Engineering Feed on Apple BipBop, starting at 20:15 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.91.</episode-num>
+  </programme>
+  <programme start="20260821210000 -0700" stop="20260821214500 -0700" channel="bipbop">
+    <title lang="en">Test Pattern Live</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Test Pattern Live on Apple BipBop, starting at 21:00 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.92.</episode-num>
+  </programme>
+  <programme start="20260821214500 -0700" stop="20260821223000 -0700" channel="bipbop">
+    <title lang="en">Colour Bars</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Colour Bars on Apple BipBop, starting at 21:45 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.93.</episode-num>
+  </programme>
+  <programme start="20260821223000 -0700" stop="20260821231500 -0700" channel="bipbop">
+    <title lang="en">Timecode Hour</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Timecode Hour on Apple BipBop, starting at 22:30 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.94.</episode-num>
+  </programme>
+  <programme start="20260821231500 -0700" stop="20260822000000 -0700" channel="bipbop">
+    <title lang="en">Engineering Feed</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Engineering Feed on Apple BipBop, starting at 23:15 on Friday 21 August.</desc>
+    <category lang="en">Reference</category>
+    <episode-num system="xmltv_ns">0.95.</episode-num>
+  </programme>
+  <programme start="20260819000000 -0700" stop="20260819004500 -0700" channel="bbb">
+    <title lang="en">Big Buck Bunny</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Big Buck Bunny on Big Buck Bunny, starting at 00:00 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.0.</episode-num>
+  </programme>
+  <programme start="20260819004500 -0700" stop="20260819013000 -0700" channel="bbb">
+    <title lang="en">Making Of</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Making Of on Big Buck Bunny, starting at 00:45 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.1.</episode-num>
+  </programme>
+  <programme start="20260819013000 -0700" stop="20260819021500 -0700" channel="bbb">
+    <title lang="en">Animation Shorts</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Animation Shorts on Big Buck Bunny, starting at 01:30 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.2.</episode-num>
+  </programme>
+  <programme start="20260819021500 -0700" stop="20260819030000 -0700" channel="bbb">
+    <title lang="en">Blender Open Movies</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Blender Open Movies on Big Buck Bunny, starting at 02:15 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.3.</episode-num>
+  </programme>
+  <programme start="20260819030000 -0700" stop="20260819034500 -0700" channel="bbb">
+    <title lang="en">Big Buck Bunny</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Big Buck Bunny on Big Buck Bunny, starting at 03:00 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.4.</episode-num>
+  </programme>
+  <programme start="20260819034500 -0700" stop="20260819043000 -0700" channel="bbb">
+    <title lang="en">Making Of</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Making Of on Big Buck Bunny, starting at 03:45 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.5.</episode-num>
+  </programme>
+  <programme start="20260819043000 -0700" stop="20260819051500 -0700" channel="bbb">
+    <title lang="en">Animation Shorts</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Animation Shorts on Big Buck Bunny, starting at 04:30 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.6.</episode-num>
+  </programme>
+  <programme start="20260819051500 -0700" stop="20260819060000 -0700" channel="bbb">
+    <title lang="en">Blender Open Movies</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Blender Open Movies on Big Buck Bunny, starting at 05:15 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.7.</episode-num>
+  </programme>
+  <programme start="20260819060000 -0700" stop="20260819064500 -0700" channel="bbb">
+    <title lang="en">Big Buck Bunny</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Big Buck Bunny on Big Buck Bunny, starting at 06:00 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.8.</episode-num>
+  </programme>
+  <programme start="20260819064500 -0700" stop="20260819073000 -0700" channel="bbb">
+    <title lang="en">Making Of</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Making Of on Big Buck Bunny, starting at 06:45 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.9.</episode-num>
+  </programme>
+  <programme start="20260819073000 -0700" stop="20260819081500 -0700" channel="bbb">
+    <title lang="en">Animation Shorts</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Animation Shorts on Big Buck Bunny, starting at 07:30 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.10.</episode-num>
+  </programme>
+  <programme start="20260819081500 -0700" stop="20260819090000 -0700" channel="bbb">
+    <title lang="en">Blender Open Movies</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Blender Open Movies on Big Buck Bunny, starting at 08:15 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.11.</episode-num>
+  </programme>
+  <programme start="20260819090000 -0700" stop="20260819094500 -0700" channel="bbb">
+    <title lang="en">Big Buck Bunny</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Big Buck Bunny on Big Buck Bunny, starting at 09:00 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.12.</episode-num>
+  </programme>
+  <programme start="20260819094500 -0700" stop="20260819103000 -0700" channel="bbb">
+    <title lang="en">Making Of</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Making Of on Big Buck Bunny, starting at 09:45 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.13.</episode-num>
+  </programme>
+  <programme start="20260819103000 -0700" stop="20260819111500 -0700" channel="bbb">
+    <title lang="en">Animation Shorts</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Animation Shorts on Big Buck Bunny, starting at 10:30 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.14.</episode-num>
+  </programme>
+  <programme start="20260819111500 -0700" stop="20260819120000 -0700" channel="bbb">
+    <title lang="en">Blender Open Movies</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Blender Open Movies on Big Buck Bunny, starting at 11:15 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.15.</episode-num>
+  </programme>
+  <programme start="20260819120000 -0700" stop="20260819124500 -0700" channel="bbb">
+    <title lang="en">Big Buck Bunny</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Big Buck Bunny on Big Buck Bunny, starting at 12:00 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.16.</episode-num>
+  </programme>
+  <programme start="20260819124500 -0700" stop="20260819133000 -0700" channel="bbb">
+    <title lang="en">Making Of</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Making Of on Big Buck Bunny, starting at 12:45 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.17.</episode-num>
+  </programme>
+  <programme start="20260819133000 -0700" stop="20260819141500 -0700" channel="bbb">
+    <title lang="en">Animation Shorts</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Animation Shorts on Big Buck Bunny, starting at 13:30 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.18.</episode-num>
+  </programme>
+  <programme start="20260819141500 -0700" stop="20260819150000 -0700" channel="bbb">
+    <title lang="en">Blender Open Movies</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Blender Open Movies on Big Buck Bunny, starting at 14:15 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.19.</episode-num>
+  </programme>
+  <programme start="20260819150000 -0700" stop="20260819154500 -0700" channel="bbb">
+    <title lang="en">Big Buck Bunny</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Big Buck Bunny on Big Buck Bunny, starting at 15:00 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.20.</episode-num>
+  </programme>
+  <programme start="20260819154500 -0700" stop="20260819163000 -0700" channel="bbb">
+    <title lang="en">Making Of</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Making Of on Big Buck Bunny, starting at 15:45 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.21.</episode-num>
+  </programme>
+  <programme start="20260819163000 -0700" stop="20260819171500 -0700" channel="bbb">
+    <title lang="en">Animation Shorts</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Animation Shorts on Big Buck Bunny, starting at 16:30 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.22.</episode-num>
+  </programme>
+  <programme start="20260819171500 -0700" stop="20260819180000 -0700" channel="bbb">
+    <title lang="en">Blender Open Movies</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Blender Open Movies on Big Buck Bunny, starting at 17:15 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.23.</episode-num>
+  </programme>
+  <programme start="20260819180000 -0700" stop="20260819184500 -0700" channel="bbb">
+    <title lang="en">Big Buck Bunny</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Big Buck Bunny on Big Buck Bunny, starting at 18:00 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.24.</episode-num>
+  </programme>
+  <programme start="20260819184500 -0700" stop="20260819193000 -0700" channel="bbb">
+    <title lang="en">Making Of</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Making Of on Big Buck Bunny, starting at 18:45 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.25.</episode-num>
+  </programme>
+  <programme start="20260819193000 -0700" stop="20260819201500 -0700" channel="bbb">
+    <title lang="en">Animation Shorts</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Animation Shorts on Big Buck Bunny, starting at 19:30 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.26.</episode-num>
+  </programme>
+  <programme start="20260819201500 -0700" stop="20260819210000 -0700" channel="bbb">
+    <title lang="en">Blender Open Movies</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Blender Open Movies on Big Buck Bunny, starting at 20:15 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.27.</episode-num>
+  </programme>
+  <programme start="20260819210000 -0700" stop="20260819214500 -0700" channel="bbb">
+    <title lang="en">Big Buck Bunny</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Big Buck Bunny on Big Buck Bunny, starting at 21:00 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.28.</episode-num>
+  </programme>
+  <programme start="20260819214500 -0700" stop="20260819223000 -0700" channel="bbb">
+    <title lang="en">Making Of</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Making Of on Big Buck Bunny, starting at 21:45 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.29.</episode-num>
+  </programme>
+  <programme start="20260819223000 -0700" stop="20260819231500 -0700" channel="bbb">
+    <title lang="en">Animation Shorts</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Animation Shorts on Big Buck Bunny, starting at 22:30 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.30.</episode-num>
+  </programme>
+  <programme start="20260819231500 -0700" stop="20260820000000 -0700" channel="bbb">
+    <title lang="en">Blender Open Movies</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Blender Open Movies on Big Buck Bunny, starting at 23:15 on Wednesday 19 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.31.</episode-num>
+  </programme>
+  <programme start="20260820000000 -0700" stop="20260820004500 -0700" channel="bbb">
+    <title lang="en">Big Buck Bunny</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Big Buck Bunny on Big Buck Bunny, starting at 00:00 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.32.</episode-num>
+  </programme>
+  <programme start="20260820004500 -0700" stop="20260820013000 -0700" channel="bbb">
+    <title lang="en">Making Of</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Making Of on Big Buck Bunny, starting at 00:45 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.33.</episode-num>
+  </programme>
+  <programme start="20260820013000 -0700" stop="20260820021500 -0700" channel="bbb">
+    <title lang="en">Animation Shorts</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Animation Shorts on Big Buck Bunny, starting at 01:30 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.34.</episode-num>
+  </programme>
+  <programme start="20260820021500 -0700" stop="20260820030000 -0700" channel="bbb">
+    <title lang="en">Blender Open Movies</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Blender Open Movies on Big Buck Bunny, starting at 02:15 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.35.</episode-num>
+  </programme>
+  <programme start="20260820030000 -0700" stop="20260820034500 -0700" channel="bbb">
+    <title lang="en">Big Buck Bunny</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Big Buck Bunny on Big Buck Bunny, starting at 03:00 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.36.</episode-num>
+  </programme>
+  <programme start="20260820034500 -0700" stop="20260820043000 -0700" channel="bbb">
+    <title lang="en">Making Of</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Making Of on Big Buck Bunny, starting at 03:45 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.37.</episode-num>
+  </programme>
+  <programme start="20260820043000 -0700" stop="20260820051500 -0700" channel="bbb">
+    <title lang="en">Animation Shorts</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Animation Shorts on Big Buck Bunny, starting at 04:30 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.38.</episode-num>
+  </programme>
+  <programme start="20260820051500 -0700" stop="20260820060000 -0700" channel="bbb">
+    <title lang="en">Blender Open Movies</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Blender Open Movies on Big Buck Bunny, starting at 05:15 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.39.</episode-num>
+  </programme>
+  <programme start="20260820060000 -0700" stop="20260820064500 -0700" channel="bbb">
+    <title lang="en">Big Buck Bunny</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Big Buck Bunny on Big Buck Bunny, starting at 06:00 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.40.</episode-num>
+  </programme>
+  <programme start="20260820064500 -0700" stop="20260820073000 -0700" channel="bbb">
+    <title lang="en">Making Of</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Making Of on Big Buck Bunny, starting at 06:45 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.41.</episode-num>
+  </programme>
+  <programme start="20260820073000 -0700" stop="20260820081500 -0700" channel="bbb">
+    <title lang="en">Animation Shorts</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Animation Shorts on Big Buck Bunny, starting at 07:30 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.42.</episode-num>
+  </programme>
+  <programme start="20260820081500 -0700" stop="20260820090000 -0700" channel="bbb">
+    <title lang="en">Blender Open Movies</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Blender Open Movies on Big Buck Bunny, starting at 08:15 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.43.</episode-num>
+  </programme>
+  <programme start="20260820090000 -0700" stop="20260820094500 -0700" channel="bbb">
+    <title lang="en">Big Buck Bunny</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Big Buck Bunny on Big Buck Bunny, starting at 09:00 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.44.</episode-num>
+  </programme>
+  <programme start="20260820094500 -0700" stop="20260820103000 -0700" channel="bbb">
+    <title lang="en">Making Of</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Making Of on Big Buck Bunny, starting at 09:45 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.45.</episode-num>
+  </programme>
+  <programme start="20260820103000 -0700" stop="20260820111500 -0700" channel="bbb">
+    <title lang="en">Animation Shorts</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Animation Shorts on Big Buck Bunny, starting at 10:30 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.46.</episode-num>
+  </programme>
+  <programme start="20260820111500 -0700" stop="20260820120000 -0700" channel="bbb">
+    <title lang="en">Blender Open Movies</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Blender Open Movies on Big Buck Bunny, starting at 11:15 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.47.</episode-num>
+  </programme>
+  <programme start="20260820120000 -0700" stop="20260820124500 -0700" channel="bbb">
+    <title lang="en">Big Buck Bunny</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Big Buck Bunny on Big Buck Bunny, starting at 12:00 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.48.</episode-num>
+  </programme>
+  <programme start="20260820124500 -0700" stop="20260820133000 -0700" channel="bbb">
+    <title lang="en">Making Of</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Making Of on Big Buck Bunny, starting at 12:45 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.49.</episode-num>
+  </programme>
+  <programme start="20260820133000 -0700" stop="20260820141500 -0700" channel="bbb">
+    <title lang="en">Animation Shorts</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Animation Shorts on Big Buck Bunny, starting at 13:30 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.50.</episode-num>
+  </programme>
+  <programme start="20260820141500 -0700" stop="20260820150000 -0700" channel="bbb">
+    <title lang="en">Blender Open Movies</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Blender Open Movies on Big Buck Bunny, starting at 14:15 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.51.</episode-num>
+  </programme>
+  <programme start="20260820150000 -0700" stop="20260820154500 -0700" channel="bbb">
+    <title lang="en">Big Buck Bunny</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Big Buck Bunny on Big Buck Bunny, starting at 15:00 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.52.</episode-num>
+  </programme>
+  <programme start="20260820154500 -0700" stop="20260820163000 -0700" channel="bbb">
+    <title lang="en">Making Of</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Making Of on Big Buck Bunny, starting at 15:45 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.53.</episode-num>
+  </programme>
+  <programme start="20260820163000 -0700" stop="20260820171500 -0700" channel="bbb">
+    <title lang="en">Animation Shorts</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Animation Shorts on Big Buck Bunny, starting at 16:30 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.54.</episode-num>
+  </programme>
+  <programme start="20260820171500 -0700" stop="20260820180000 -0700" channel="bbb">
+    <title lang="en">Blender Open Movies</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Blender Open Movies on Big Buck Bunny, starting at 17:15 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.55.</episode-num>
+  </programme>
+  <programme start="20260820180000 -0700" stop="20260820184500 -0700" channel="bbb">
+    <title lang="en">Big Buck Bunny</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Big Buck Bunny on Big Buck Bunny, starting at 18:00 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.56.</episode-num>
+  </programme>
+  <programme start="20260820184500 -0700" stop="20260820193000 -0700" channel="bbb">
+    <title lang="en">Making Of</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Making Of on Big Buck Bunny, starting at 18:45 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.57.</episode-num>
+  </programme>
+  <programme start="20260820193000 -0700" stop="20260820201500 -0700" channel="bbb">
+    <title lang="en">Animation Shorts</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Animation Shorts on Big Buck Bunny, starting at 19:30 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.58.</episode-num>
+  </programme>
+  <programme start="20260820201500 -0700" stop="20260820210000 -0700" channel="bbb">
+    <title lang="en">Blender Open Movies</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Blender Open Movies on Big Buck Bunny, starting at 20:15 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.59.</episode-num>
+  </programme>
+  <programme start="20260820210000 -0700" stop="20260820214500 -0700" channel="bbb">
+    <title lang="en">Big Buck Bunny</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Big Buck Bunny on Big Buck Bunny, starting at 21:00 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.60.</episode-num>
+  </programme>
+  <programme start="20260820214500 -0700" stop="20260820223000 -0700" channel="bbb">
+    <title lang="en">Making Of</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Making Of on Big Buck Bunny, starting at 21:45 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.61.</episode-num>
+  </programme>
+  <programme start="20260820223000 -0700" stop="20260820231500 -0700" channel="bbb">
+    <title lang="en">Animation Shorts</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Animation Shorts on Big Buck Bunny, starting at 22:30 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.62.</episode-num>
+  </programme>
+  <programme start="20260820231500 -0700" stop="20260821000000 -0700" channel="bbb">
+    <title lang="en">Blender Open Movies</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Blender Open Movies on Big Buck Bunny, starting at 23:15 on Thursday 20 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.63.</episode-num>
+  </programme>
+  <programme start="20260821000000 -0700" stop="20260821004500 -0700" channel="bbb">
+    <title lang="en">Big Buck Bunny</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Big Buck Bunny on Big Buck Bunny, starting at 00:00 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.64.</episode-num>
+  </programme>
+  <programme start="20260821004500 -0700" stop="20260821013000 -0700" channel="bbb">
+    <title lang="en">Making Of</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Making Of on Big Buck Bunny, starting at 00:45 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.65.</episode-num>
+  </programme>
+  <programme start="20260821013000 -0700" stop="20260821021500 -0700" channel="bbb">
+    <title lang="en">Animation Shorts</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Animation Shorts on Big Buck Bunny, starting at 01:30 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.66.</episode-num>
+  </programme>
+  <programme start="20260821021500 -0700" stop="20260821030000 -0700" channel="bbb">
+    <title lang="en">Blender Open Movies</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Blender Open Movies on Big Buck Bunny, starting at 02:15 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.67.</episode-num>
+  </programme>
+  <programme start="20260821030000 -0700" stop="20260821034500 -0700" channel="bbb">
+    <title lang="en">Big Buck Bunny</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Big Buck Bunny on Big Buck Bunny, starting at 03:00 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.68.</episode-num>
+  </programme>
+  <programme start="20260821034500 -0700" stop="20260821043000 -0700" channel="bbb">
+    <title lang="en">Making Of</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Making Of on Big Buck Bunny, starting at 03:45 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.69.</episode-num>
+  </programme>
+  <programme start="20260821043000 -0700" stop="20260821051500 -0700" channel="bbb">
+    <title lang="en">Animation Shorts</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Animation Shorts on Big Buck Bunny, starting at 04:30 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.70.</episode-num>
+  </programme>
+  <programme start="20260821051500 -0700" stop="20260821060000 -0700" channel="bbb">
+    <title lang="en">Blender Open Movies</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Blender Open Movies on Big Buck Bunny, starting at 05:15 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.71.</episode-num>
+  </programme>
+  <programme start="20260821060000 -0700" stop="20260821064500 -0700" channel="bbb">
+    <title lang="en">Big Buck Bunny</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Big Buck Bunny on Big Buck Bunny, starting at 06:00 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.72.</episode-num>
+  </programme>
+  <programme start="20260821064500 -0700" stop="20260821073000 -0700" channel="bbb">
+    <title lang="en">Making Of</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Making Of on Big Buck Bunny, starting at 06:45 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.73.</episode-num>
+  </programme>
+  <programme start="20260821073000 -0700" stop="20260821081500 -0700" channel="bbb">
+    <title lang="en">Animation Shorts</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Animation Shorts on Big Buck Bunny, starting at 07:30 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.74.</episode-num>
+  </programme>
+  <programme start="20260821081500 -0700" stop="20260821090000 -0700" channel="bbb">
+    <title lang="en">Blender Open Movies</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Blender Open Movies on Big Buck Bunny, starting at 08:15 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.75.</episode-num>
+  </programme>
+  <programme start="20260821090000 -0700" stop="20260821094500 -0700" channel="bbb">
+    <title lang="en">Big Buck Bunny</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Big Buck Bunny on Big Buck Bunny, starting at 09:00 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.76.</episode-num>
+  </programme>
+  <programme start="20260821094500 -0700" stop="20260821103000 -0700" channel="bbb">
+    <title lang="en">Making Of</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Making Of on Big Buck Bunny, starting at 09:45 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.77.</episode-num>
+  </programme>
+  <programme start="20260821103000 -0700" stop="20260821111500 -0700" channel="bbb">
+    <title lang="en">Animation Shorts</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Animation Shorts on Big Buck Bunny, starting at 10:30 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.78.</episode-num>
+  </programme>
+  <programme start="20260821111500 -0700" stop="20260821120000 -0700" channel="bbb">
+    <title lang="en">Blender Open Movies</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Blender Open Movies on Big Buck Bunny, starting at 11:15 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.79.</episode-num>
+  </programme>
+  <programme start="20260821120000 -0700" stop="20260821124500 -0700" channel="bbb">
+    <title lang="en">Big Buck Bunny</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Big Buck Bunny on Big Buck Bunny, starting at 12:00 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.80.</episode-num>
+  </programme>
+  <programme start="20260821124500 -0700" stop="20260821133000 -0700" channel="bbb">
+    <title lang="en">Making Of</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Making Of on Big Buck Bunny, starting at 12:45 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.81.</episode-num>
+  </programme>
+  <programme start="20260821133000 -0700" stop="20260821141500 -0700" channel="bbb">
+    <title lang="en">Animation Shorts</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Animation Shorts on Big Buck Bunny, starting at 13:30 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.82.</episode-num>
+  </programme>
+  <programme start="20260821141500 -0700" stop="20260821150000 -0700" channel="bbb">
+    <title lang="en">Blender Open Movies</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Blender Open Movies on Big Buck Bunny, starting at 14:15 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.83.</episode-num>
+  </programme>
+  <programme start="20260821150000 -0700" stop="20260821154500 -0700" channel="bbb">
+    <title lang="en">Big Buck Bunny</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Big Buck Bunny on Big Buck Bunny, starting at 15:00 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.84.</episode-num>
+  </programme>
+  <programme start="20260821154500 -0700" stop="20260821163000 -0700" channel="bbb">
+    <title lang="en">Making Of</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Making Of on Big Buck Bunny, starting at 15:45 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.85.</episode-num>
+  </programme>
+  <programme start="20260821163000 -0700" stop="20260821171500 -0700" channel="bbb">
+    <title lang="en">Animation Shorts</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Animation Shorts on Big Buck Bunny, starting at 16:30 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.86.</episode-num>
+  </programme>
+  <programme start="20260821171500 -0700" stop="20260821180000 -0700" channel="bbb">
+    <title lang="en">Blender Open Movies</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Blender Open Movies on Big Buck Bunny, starting at 17:15 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.87.</episode-num>
+  </programme>
+  <programme start="20260821180000 -0700" stop="20260821184500 -0700" channel="bbb">
+    <title lang="en">Big Buck Bunny</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Big Buck Bunny on Big Buck Bunny, starting at 18:00 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.88.</episode-num>
+  </programme>
+  <programme start="20260821184500 -0700" stop="20260821193000 -0700" channel="bbb">
+    <title lang="en">Making Of</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Making Of on Big Buck Bunny, starting at 18:45 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.89.</episode-num>
+  </programme>
+  <programme start="20260821193000 -0700" stop="20260821201500 -0700" channel="bbb">
+    <title lang="en">Animation Shorts</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Animation Shorts on Big Buck Bunny, starting at 19:30 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.90.</episode-num>
+  </programme>
+  <programme start="20260821201500 -0700" stop="20260821210000 -0700" channel="bbb">
+    <title lang="en">Blender Open Movies</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Blender Open Movies on Big Buck Bunny, starting at 20:15 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.91.</episode-num>
+  </programme>
+  <programme start="20260821210000 -0700" stop="20260821214500 -0700" channel="bbb">
+    <title lang="en">Big Buck Bunny</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Big Buck Bunny on Big Buck Bunny, starting at 21:00 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.92.</episode-num>
+  </programme>
+  <programme start="20260821214500 -0700" stop="20260821223000 -0700" channel="bbb">
+    <title lang="en">Making Of</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Making Of on Big Buck Bunny, starting at 21:45 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.93.</episode-num>
+  </programme>
+  <programme start="20260821223000 -0700" stop="20260821231500 -0700" channel="bbb">
+    <title lang="en">Animation Shorts</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Animation Shorts on Big Buck Bunny, starting at 22:30 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.94.</episode-num>
+  </programme>
+  <programme start="20260821231500 -0700" stop="20260822000000 -0700" channel="bbb">
+    <title lang="en">Blender Open Movies</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Blender Open Movies on Big Buck Bunny, starting at 23:15 on Friday 21 August.</desc>
+    <category lang="en">Animation</category>
+    <episode-num system="xmltv_ns">0.95.</episode-num>
+  </programme>
+  <programme start="20260819000000 -0700" stop="20260819004500 -0700" channel="tears">
+    <title lang="en">Tears of Steel</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Tears of Steel on Tears of Steel, starting at 00:00 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.0.</episode-num>
+  </programme>
+  <programme start="20260819004500 -0700" stop="20260819013000 -0700" channel="tears">
+    <title lang="en">Behind the VFX</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Behind the VFX on Tears of Steel, starting at 00:45 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.1.</episode-num>
+  </programme>
+  <programme start="20260819013000 -0700" stop="20260819021500 -0700" channel="tears">
+    <title lang="en">Sci-Fi Double Bill</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Sci-Fi Double Bill on Tears of Steel, starting at 01:30 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.2.</episode-num>
+  </programme>
+  <programme start="20260819021500 -0700" stop="20260819030000 -0700" channel="tears">
+    <title lang="en">Director Commentary</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Director Commentary on Tears of Steel, starting at 02:15 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.3.</episode-num>
+  </programme>
+  <programme start="20260819030000 -0700" stop="20260819034500 -0700" channel="tears">
+    <title lang="en">Tears of Steel</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Tears of Steel on Tears of Steel, starting at 03:00 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.4.</episode-num>
+  </programme>
+  <programme start="20260819034500 -0700" stop="20260819043000 -0700" channel="tears">
+    <title lang="en">Behind the VFX</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Behind the VFX on Tears of Steel, starting at 03:45 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.5.</episode-num>
+  </programme>
+  <programme start="20260819043000 -0700" stop="20260819051500 -0700" channel="tears">
+    <title lang="en">Sci-Fi Double Bill</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Sci-Fi Double Bill on Tears of Steel, starting at 04:30 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.6.</episode-num>
+  </programme>
+  <programme start="20260819051500 -0700" stop="20260819060000 -0700" channel="tears">
+    <title lang="en">Director Commentary</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Director Commentary on Tears of Steel, starting at 05:15 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.7.</episode-num>
+  </programme>
+  <programme start="20260819060000 -0700" stop="20260819064500 -0700" channel="tears">
+    <title lang="en">Tears of Steel</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Tears of Steel on Tears of Steel, starting at 06:00 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.8.</episode-num>
+  </programme>
+  <programme start="20260819064500 -0700" stop="20260819073000 -0700" channel="tears">
+    <title lang="en">Behind the VFX</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Behind the VFX on Tears of Steel, starting at 06:45 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.9.</episode-num>
+  </programme>
+  <programme start="20260819073000 -0700" stop="20260819081500 -0700" channel="tears">
+    <title lang="en">Sci-Fi Double Bill</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Sci-Fi Double Bill on Tears of Steel, starting at 07:30 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.10.</episode-num>
+  </programme>
+  <programme start="20260819081500 -0700" stop="20260819090000 -0700" channel="tears">
+    <title lang="en">Director Commentary</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Director Commentary on Tears of Steel, starting at 08:15 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.11.</episode-num>
+  </programme>
+  <programme start="20260819090000 -0700" stop="20260819094500 -0700" channel="tears">
+    <title lang="en">Tears of Steel</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Tears of Steel on Tears of Steel, starting at 09:00 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.12.</episode-num>
+  </programme>
+  <programme start="20260819094500 -0700" stop="20260819103000 -0700" channel="tears">
+    <title lang="en">Behind the VFX</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Behind the VFX on Tears of Steel, starting at 09:45 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.13.</episode-num>
+  </programme>
+  <programme start="20260819103000 -0700" stop="20260819111500 -0700" channel="tears">
+    <title lang="en">Sci-Fi Double Bill</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Sci-Fi Double Bill on Tears of Steel, starting at 10:30 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.14.</episode-num>
+  </programme>
+  <programme start="20260819111500 -0700" stop="20260819120000 -0700" channel="tears">
+    <title lang="en">Director Commentary</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Director Commentary on Tears of Steel, starting at 11:15 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.15.</episode-num>
+  </programme>
+  <programme start="20260819120000 -0700" stop="20260819124500 -0700" channel="tears">
+    <title lang="en">Tears of Steel</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Tears of Steel on Tears of Steel, starting at 12:00 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.16.</episode-num>
+  </programme>
+  <programme start="20260819124500 -0700" stop="20260819133000 -0700" channel="tears">
+    <title lang="en">Behind the VFX</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Behind the VFX on Tears of Steel, starting at 12:45 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.17.</episode-num>
+  </programme>
+  <programme start="20260819133000 -0700" stop="20260819141500 -0700" channel="tears">
+    <title lang="en">Sci-Fi Double Bill</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Sci-Fi Double Bill on Tears of Steel, starting at 13:30 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.18.</episode-num>
+  </programme>
+  <programme start="20260819141500 -0700" stop="20260819150000 -0700" channel="tears">
+    <title lang="en">Director Commentary</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Director Commentary on Tears of Steel, starting at 14:15 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.19.</episode-num>
+  </programme>
+  <programme start="20260819150000 -0700" stop="20260819154500 -0700" channel="tears">
+    <title lang="en">Tears of Steel</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Tears of Steel on Tears of Steel, starting at 15:00 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.20.</episode-num>
+  </programme>
+  <programme start="20260819154500 -0700" stop="20260819163000 -0700" channel="tears">
+    <title lang="en">Behind the VFX</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Behind the VFX on Tears of Steel, starting at 15:45 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.21.</episode-num>
+  </programme>
+  <programme start="20260819163000 -0700" stop="20260819171500 -0700" channel="tears">
+    <title lang="en">Sci-Fi Double Bill</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Sci-Fi Double Bill on Tears of Steel, starting at 16:30 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.22.</episode-num>
+  </programme>
+  <programme start="20260819171500 -0700" stop="20260819180000 -0700" channel="tears">
+    <title lang="en">Director Commentary</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Director Commentary on Tears of Steel, starting at 17:15 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.23.</episode-num>
+  </programme>
+  <programme start="20260819180000 -0700" stop="20260819184500 -0700" channel="tears">
+    <title lang="en">Tears of Steel</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Tears of Steel on Tears of Steel, starting at 18:00 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.24.</episode-num>
+  </programme>
+  <programme start="20260819184500 -0700" stop="20260819193000 -0700" channel="tears">
+    <title lang="en">Behind the VFX</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Behind the VFX on Tears of Steel, starting at 18:45 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.25.</episode-num>
+  </programme>
+  <programme start="20260819193000 -0700" stop="20260819201500 -0700" channel="tears">
+    <title lang="en">Sci-Fi Double Bill</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Sci-Fi Double Bill on Tears of Steel, starting at 19:30 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.26.</episode-num>
+  </programme>
+  <programme start="20260819201500 -0700" stop="20260819210000 -0700" channel="tears">
+    <title lang="en">Director Commentary</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Director Commentary on Tears of Steel, starting at 20:15 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.27.</episode-num>
+  </programme>
+  <programme start="20260819210000 -0700" stop="20260819214500 -0700" channel="tears">
+    <title lang="en">Tears of Steel</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Tears of Steel on Tears of Steel, starting at 21:00 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.28.</episode-num>
+  </programme>
+  <programme start="20260819214500 -0700" stop="20260819223000 -0700" channel="tears">
+    <title lang="en">Behind the VFX</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Behind the VFX on Tears of Steel, starting at 21:45 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.29.</episode-num>
+  </programme>
+  <programme start="20260819223000 -0700" stop="20260819231500 -0700" channel="tears">
+    <title lang="en">Sci-Fi Double Bill</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Sci-Fi Double Bill on Tears of Steel, starting at 22:30 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.30.</episode-num>
+  </programme>
+  <programme start="20260819231500 -0700" stop="20260820000000 -0700" channel="tears">
+    <title lang="en">Director Commentary</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Director Commentary on Tears of Steel, starting at 23:15 on Wednesday 19 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.31.</episode-num>
+  </programme>
+  <programme start="20260820000000 -0700" stop="20260820004500 -0700" channel="tears">
+    <title lang="en">Tears of Steel</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Tears of Steel on Tears of Steel, starting at 00:00 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.32.</episode-num>
+  </programme>
+  <programme start="20260820004500 -0700" stop="20260820013000 -0700" channel="tears">
+    <title lang="en">Behind the VFX</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Behind the VFX on Tears of Steel, starting at 00:45 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.33.</episode-num>
+  </programme>
+  <programme start="20260820013000 -0700" stop="20260820021500 -0700" channel="tears">
+    <title lang="en">Sci-Fi Double Bill</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Sci-Fi Double Bill on Tears of Steel, starting at 01:30 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.34.</episode-num>
+  </programme>
+  <programme start="20260820021500 -0700" stop="20260820030000 -0700" channel="tears">
+    <title lang="en">Director Commentary</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Director Commentary on Tears of Steel, starting at 02:15 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.35.</episode-num>
+  </programme>
+  <programme start="20260820030000 -0700" stop="20260820034500 -0700" channel="tears">
+    <title lang="en">Tears of Steel</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Tears of Steel on Tears of Steel, starting at 03:00 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.36.</episode-num>
+  </programme>
+  <programme start="20260820034500 -0700" stop="20260820043000 -0700" channel="tears">
+    <title lang="en">Behind the VFX</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Behind the VFX on Tears of Steel, starting at 03:45 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.37.</episode-num>
+  </programme>
+  <programme start="20260820043000 -0700" stop="20260820051500 -0700" channel="tears">
+    <title lang="en">Sci-Fi Double Bill</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Sci-Fi Double Bill on Tears of Steel, starting at 04:30 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.38.</episode-num>
+  </programme>
+  <programme start="20260820051500 -0700" stop="20260820060000 -0700" channel="tears">
+    <title lang="en">Director Commentary</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Director Commentary on Tears of Steel, starting at 05:15 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.39.</episode-num>
+  </programme>
+  <programme start="20260820060000 -0700" stop="20260820064500 -0700" channel="tears">
+    <title lang="en">Tears of Steel</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Tears of Steel on Tears of Steel, starting at 06:00 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.40.</episode-num>
+  </programme>
+  <programme start="20260820064500 -0700" stop="20260820073000 -0700" channel="tears">
+    <title lang="en">Behind the VFX</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Behind the VFX on Tears of Steel, starting at 06:45 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.41.</episode-num>
+  </programme>
+  <programme start="20260820073000 -0700" stop="20260820081500 -0700" channel="tears">
+    <title lang="en">Sci-Fi Double Bill</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Sci-Fi Double Bill on Tears of Steel, starting at 07:30 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.42.</episode-num>
+  </programme>
+  <programme start="20260820081500 -0700" stop="20260820090000 -0700" channel="tears">
+    <title lang="en">Director Commentary</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Director Commentary on Tears of Steel, starting at 08:15 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.43.</episode-num>
+  </programme>
+  <programme start="20260820090000 -0700" stop="20260820094500 -0700" channel="tears">
+    <title lang="en">Tears of Steel</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Tears of Steel on Tears of Steel, starting at 09:00 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.44.</episode-num>
+  </programme>
+  <programme start="20260820094500 -0700" stop="20260820103000 -0700" channel="tears">
+    <title lang="en">Behind the VFX</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Behind the VFX on Tears of Steel, starting at 09:45 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.45.</episode-num>
+  </programme>
+  <programme start="20260820103000 -0700" stop="20260820111500 -0700" channel="tears">
+    <title lang="en">Sci-Fi Double Bill</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Sci-Fi Double Bill on Tears of Steel, starting at 10:30 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.46.</episode-num>
+  </programme>
+  <programme start="20260820111500 -0700" stop="20260820120000 -0700" channel="tears">
+    <title lang="en">Director Commentary</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Director Commentary on Tears of Steel, starting at 11:15 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.47.</episode-num>
+  </programme>
+  <programme start="20260820120000 -0700" stop="20260820124500 -0700" channel="tears">
+    <title lang="en">Tears of Steel</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Tears of Steel on Tears of Steel, starting at 12:00 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.48.</episode-num>
+  </programme>
+  <programme start="20260820124500 -0700" stop="20260820133000 -0700" channel="tears">
+    <title lang="en">Behind the VFX</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Behind the VFX on Tears of Steel, starting at 12:45 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.49.</episode-num>
+  </programme>
+  <programme start="20260820133000 -0700" stop="20260820141500 -0700" channel="tears">
+    <title lang="en">Sci-Fi Double Bill</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Sci-Fi Double Bill on Tears of Steel, starting at 13:30 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.50.</episode-num>
+  </programme>
+  <programme start="20260820141500 -0700" stop="20260820150000 -0700" channel="tears">
+    <title lang="en">Director Commentary</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Director Commentary on Tears of Steel, starting at 14:15 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.51.</episode-num>
+  </programme>
+  <programme start="20260820150000 -0700" stop="20260820154500 -0700" channel="tears">
+    <title lang="en">Tears of Steel</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Tears of Steel on Tears of Steel, starting at 15:00 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.52.</episode-num>
+  </programme>
+  <programme start="20260820154500 -0700" stop="20260820163000 -0700" channel="tears">
+    <title lang="en">Behind the VFX</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Behind the VFX on Tears of Steel, starting at 15:45 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.53.</episode-num>
+  </programme>
+  <programme start="20260820163000 -0700" stop="20260820171500 -0700" channel="tears">
+    <title lang="en">Sci-Fi Double Bill</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Sci-Fi Double Bill on Tears of Steel, starting at 16:30 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.54.</episode-num>
+  </programme>
+  <programme start="20260820171500 -0700" stop="20260820180000 -0700" channel="tears">
+    <title lang="en">Director Commentary</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Director Commentary on Tears of Steel, starting at 17:15 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.55.</episode-num>
+  </programme>
+  <programme start="20260820180000 -0700" stop="20260820184500 -0700" channel="tears">
+    <title lang="en">Tears of Steel</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Tears of Steel on Tears of Steel, starting at 18:00 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.56.</episode-num>
+  </programme>
+  <programme start="20260820184500 -0700" stop="20260820193000 -0700" channel="tears">
+    <title lang="en">Behind the VFX</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Behind the VFX on Tears of Steel, starting at 18:45 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.57.</episode-num>
+  </programme>
+  <programme start="20260820193000 -0700" stop="20260820201500 -0700" channel="tears">
+    <title lang="en">Sci-Fi Double Bill</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Sci-Fi Double Bill on Tears of Steel, starting at 19:30 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.58.</episode-num>
+  </programme>
+  <programme start="20260820201500 -0700" stop="20260820210000 -0700" channel="tears">
+    <title lang="en">Director Commentary</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Director Commentary on Tears of Steel, starting at 20:15 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.59.</episode-num>
+  </programme>
+  <programme start="20260820210000 -0700" stop="20260820214500 -0700" channel="tears">
+    <title lang="en">Tears of Steel</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Tears of Steel on Tears of Steel, starting at 21:00 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.60.</episode-num>
+  </programme>
+  <programme start="20260820214500 -0700" stop="20260820223000 -0700" channel="tears">
+    <title lang="en">Behind the VFX</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Behind the VFX on Tears of Steel, starting at 21:45 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.61.</episode-num>
+  </programme>
+  <programme start="20260820223000 -0700" stop="20260820231500 -0700" channel="tears">
+    <title lang="en">Sci-Fi Double Bill</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Sci-Fi Double Bill on Tears of Steel, starting at 22:30 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.62.</episode-num>
+  </programme>
+  <programme start="20260820231500 -0700" stop="20260821000000 -0700" channel="tears">
+    <title lang="en">Director Commentary</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Director Commentary on Tears of Steel, starting at 23:15 on Thursday 20 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.63.</episode-num>
+  </programme>
+  <programme start="20260821000000 -0700" stop="20260821004500 -0700" channel="tears">
+    <title lang="en">Tears of Steel</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Tears of Steel on Tears of Steel, starting at 00:00 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.64.</episode-num>
+  </programme>
+  <programme start="20260821004500 -0700" stop="20260821013000 -0700" channel="tears">
+    <title lang="en">Behind the VFX</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Behind the VFX on Tears of Steel, starting at 00:45 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.65.</episode-num>
+  </programme>
+  <programme start="20260821013000 -0700" stop="20260821021500 -0700" channel="tears">
+    <title lang="en">Sci-Fi Double Bill</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Sci-Fi Double Bill on Tears of Steel, starting at 01:30 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.66.</episode-num>
+  </programme>
+  <programme start="20260821021500 -0700" stop="20260821030000 -0700" channel="tears">
+    <title lang="en">Director Commentary</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Director Commentary on Tears of Steel, starting at 02:15 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.67.</episode-num>
+  </programme>
+  <programme start="20260821030000 -0700" stop="20260821034500 -0700" channel="tears">
+    <title lang="en">Tears of Steel</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Tears of Steel on Tears of Steel, starting at 03:00 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.68.</episode-num>
+  </programme>
+  <programme start="20260821034500 -0700" stop="20260821043000 -0700" channel="tears">
+    <title lang="en">Behind the VFX</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Behind the VFX on Tears of Steel, starting at 03:45 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.69.</episode-num>
+  </programme>
+  <programme start="20260821043000 -0700" stop="20260821051500 -0700" channel="tears">
+    <title lang="en">Sci-Fi Double Bill</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Sci-Fi Double Bill on Tears of Steel, starting at 04:30 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.70.</episode-num>
+  </programme>
+  <programme start="20260821051500 -0700" stop="20260821060000 -0700" channel="tears">
+    <title lang="en">Director Commentary</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Director Commentary on Tears of Steel, starting at 05:15 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.71.</episode-num>
+  </programme>
+  <programme start="20260821060000 -0700" stop="20260821064500 -0700" channel="tears">
+    <title lang="en">Tears of Steel</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Tears of Steel on Tears of Steel, starting at 06:00 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.72.</episode-num>
+  </programme>
+  <programme start="20260821064500 -0700" stop="20260821073000 -0700" channel="tears">
+    <title lang="en">Behind the VFX</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Behind the VFX on Tears of Steel, starting at 06:45 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.73.</episode-num>
+  </programme>
+  <programme start="20260821073000 -0700" stop="20260821081500 -0700" channel="tears">
+    <title lang="en">Sci-Fi Double Bill</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Sci-Fi Double Bill on Tears of Steel, starting at 07:30 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.74.</episode-num>
+  </programme>
+  <programme start="20260821081500 -0700" stop="20260821090000 -0700" channel="tears">
+    <title lang="en">Director Commentary</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Director Commentary on Tears of Steel, starting at 08:15 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.75.</episode-num>
+  </programme>
+  <programme start="20260821090000 -0700" stop="20260821094500 -0700" channel="tears">
+    <title lang="en">Tears of Steel</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Tears of Steel on Tears of Steel, starting at 09:00 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.76.</episode-num>
+  </programme>
+  <programme start="20260821094500 -0700" stop="20260821103000 -0700" channel="tears">
+    <title lang="en">Behind the VFX</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Behind the VFX on Tears of Steel, starting at 09:45 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.77.</episode-num>
+  </programme>
+  <programme start="20260821103000 -0700" stop="20260821111500 -0700" channel="tears">
+    <title lang="en">Sci-Fi Double Bill</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Sci-Fi Double Bill on Tears of Steel, starting at 10:30 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.78.</episode-num>
+  </programme>
+  <programme start="20260821111500 -0700" stop="20260821120000 -0700" channel="tears">
+    <title lang="en">Director Commentary</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Director Commentary on Tears of Steel, starting at 11:15 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.79.</episode-num>
+  </programme>
+  <programme start="20260821120000 -0700" stop="20260821124500 -0700" channel="tears">
+    <title lang="en">Tears of Steel</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Tears of Steel on Tears of Steel, starting at 12:00 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.80.</episode-num>
+  </programme>
+  <programme start="20260821124500 -0700" stop="20260821133000 -0700" channel="tears">
+    <title lang="en">Behind the VFX</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Behind the VFX on Tears of Steel, starting at 12:45 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.81.</episode-num>
+  </programme>
+  <programme start="20260821133000 -0700" stop="20260821141500 -0700" channel="tears">
+    <title lang="en">Sci-Fi Double Bill</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Sci-Fi Double Bill on Tears of Steel, starting at 13:30 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.82.</episode-num>
+  </programme>
+  <programme start="20260821141500 -0700" stop="20260821150000 -0700" channel="tears">
+    <title lang="en">Director Commentary</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Director Commentary on Tears of Steel, starting at 14:15 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.83.</episode-num>
+  </programme>
+  <programme start="20260821150000 -0700" stop="20260821154500 -0700" channel="tears">
+    <title lang="en">Tears of Steel</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Tears of Steel on Tears of Steel, starting at 15:00 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.84.</episode-num>
+  </programme>
+  <programme start="20260821154500 -0700" stop="20260821163000 -0700" channel="tears">
+    <title lang="en">Behind the VFX</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Behind the VFX on Tears of Steel, starting at 15:45 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.85.</episode-num>
+  </programme>
+  <programme start="20260821163000 -0700" stop="20260821171500 -0700" channel="tears">
+    <title lang="en">Sci-Fi Double Bill</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Sci-Fi Double Bill on Tears of Steel, starting at 16:30 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.86.</episode-num>
+  </programme>
+  <programme start="20260821171500 -0700" stop="20260821180000 -0700" channel="tears">
+    <title lang="en">Director Commentary</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Director Commentary on Tears of Steel, starting at 17:15 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.87.</episode-num>
+  </programme>
+  <programme start="20260821180000 -0700" stop="20260821184500 -0700" channel="tears">
+    <title lang="en">Tears of Steel</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Tears of Steel on Tears of Steel, starting at 18:00 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.88.</episode-num>
+  </programme>
+  <programme start="20260821184500 -0700" stop="20260821193000 -0700" channel="tears">
+    <title lang="en">Behind the VFX</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Behind the VFX on Tears of Steel, starting at 18:45 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.89.</episode-num>
+  </programme>
+  <programme start="20260821193000 -0700" stop="20260821201500 -0700" channel="tears">
+    <title lang="en">Sci-Fi Double Bill</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Sci-Fi Double Bill on Tears of Steel, starting at 19:30 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.90.</episode-num>
+  </programme>
+  <programme start="20260821201500 -0700" stop="20260821210000 -0700" channel="tears">
+    <title lang="en">Director Commentary</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Director Commentary on Tears of Steel, starting at 20:15 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.91.</episode-num>
+  </programme>
+  <programme start="20260821210000 -0700" stop="20260821214500 -0700" channel="tears">
+    <title lang="en">Tears of Steel</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Tears of Steel on Tears of Steel, starting at 21:00 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.92.</episode-num>
+  </programme>
+  <programme start="20260821214500 -0700" stop="20260821223000 -0700" channel="tears">
+    <title lang="en">Behind the VFX</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Behind the VFX on Tears of Steel, starting at 21:45 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.93.</episode-num>
+  </programme>
+  <programme start="20260821223000 -0700" stop="20260821231500 -0700" channel="tears">
+    <title lang="en">Sci-Fi Double Bill</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Sci-Fi Double Bill on Tears of Steel, starting at 22:30 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.94.</episode-num>
+  </programme>
+  <programme start="20260821231500 -0700" stop="20260822000000 -0700" channel="tears">
+    <title lang="en">Director Commentary</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Director Commentary on Tears of Steel, starting at 23:15 on Friday 21 August.</desc>
+    <category lang="en">Science fiction</category>
+    <episode-num system="xmltv_ns">0.95.</episode-num>
+  </programme>
+  <programme start="20260819000000 -0700" stop="20260819004500 -0700" channel="sintel">
+    <title lang="en">Sintel</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Sintel on Sintel, starting at 00:00 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.0.</episode-num>
+  </programme>
+  <programme start="20260819004500 -0700" stop="20260819013000 -0700" channel="sintel">
+    <title lang="en">The Dragon Hunt</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">The Dragon Hunt on Sintel, starting at 00:45 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.1.</episode-num>
+  </programme>
+  <programme start="20260819013000 -0700" stop="20260819021500 -0700" channel="sintel">
+    <title lang="en">Concept Art Review</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Concept Art Review on Sintel, starting at 01:30 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.2.</episode-num>
+  </programme>
+  <programme start="20260819021500 -0700" stop="20260819030000 -0700" channel="sintel">
+    <title lang="en">Score and Sound</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Score and Sound on Sintel, starting at 02:15 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.3.</episode-num>
+  </programme>
+  <programme start="20260819030000 -0700" stop="20260819034500 -0700" channel="sintel">
+    <title lang="en">Sintel</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Sintel on Sintel, starting at 03:00 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.4.</episode-num>
+  </programme>
+  <programme start="20260819034500 -0700" stop="20260819043000 -0700" channel="sintel">
+    <title lang="en">The Dragon Hunt</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">The Dragon Hunt on Sintel, starting at 03:45 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.5.</episode-num>
+  </programme>
+  <programme start="20260819043000 -0700" stop="20260819051500 -0700" channel="sintel">
+    <title lang="en">Concept Art Review</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Concept Art Review on Sintel, starting at 04:30 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.6.</episode-num>
+  </programme>
+  <programme start="20260819051500 -0700" stop="20260819060000 -0700" channel="sintel">
+    <title lang="en">Score and Sound</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Score and Sound on Sintel, starting at 05:15 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.7.</episode-num>
+  </programme>
+  <programme start="20260819060000 -0700" stop="20260819064500 -0700" channel="sintel">
+    <title lang="en">Sintel</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Sintel on Sintel, starting at 06:00 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.8.</episode-num>
+  </programme>
+  <programme start="20260819064500 -0700" stop="20260819073000 -0700" channel="sintel">
+    <title lang="en">The Dragon Hunt</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">The Dragon Hunt on Sintel, starting at 06:45 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.9.</episode-num>
+  </programme>
+  <programme start="20260819073000 -0700" stop="20260819081500 -0700" channel="sintel">
+    <title lang="en">Concept Art Review</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Concept Art Review on Sintel, starting at 07:30 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.10.</episode-num>
+  </programme>
+  <programme start="20260819081500 -0700" stop="20260819090000 -0700" channel="sintel">
+    <title lang="en">Score and Sound</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Score and Sound on Sintel, starting at 08:15 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.11.</episode-num>
+  </programme>
+  <programme start="20260819090000 -0700" stop="20260819094500 -0700" channel="sintel">
+    <title lang="en">Sintel</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Sintel on Sintel, starting at 09:00 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.12.</episode-num>
+  </programme>
+  <programme start="20260819094500 -0700" stop="20260819103000 -0700" channel="sintel">
+    <title lang="en">The Dragon Hunt</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">The Dragon Hunt on Sintel, starting at 09:45 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.13.</episode-num>
+  </programme>
+  <programme start="20260819103000 -0700" stop="20260819111500 -0700" channel="sintel">
+    <title lang="en">Concept Art Review</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Concept Art Review on Sintel, starting at 10:30 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.14.</episode-num>
+  </programme>
+  <programme start="20260819111500 -0700" stop="20260819120000 -0700" channel="sintel">
+    <title lang="en">Score and Sound</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Score and Sound on Sintel, starting at 11:15 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.15.</episode-num>
+  </programme>
+  <programme start="20260819120000 -0700" stop="20260819124500 -0700" channel="sintel">
+    <title lang="en">Sintel</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Sintel on Sintel, starting at 12:00 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.16.</episode-num>
+  </programme>
+  <programme start="20260819124500 -0700" stop="20260819133000 -0700" channel="sintel">
+    <title lang="en">The Dragon Hunt</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">The Dragon Hunt on Sintel, starting at 12:45 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.17.</episode-num>
+  </programme>
+  <programme start="20260819133000 -0700" stop="20260819141500 -0700" channel="sintel">
+    <title lang="en">Concept Art Review</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Concept Art Review on Sintel, starting at 13:30 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.18.</episode-num>
+  </programme>
+  <programme start="20260819141500 -0700" stop="20260819150000 -0700" channel="sintel">
+    <title lang="en">Score and Sound</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Score and Sound on Sintel, starting at 14:15 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.19.</episode-num>
+  </programme>
+  <programme start="20260819150000 -0700" stop="20260819154500 -0700" channel="sintel">
+    <title lang="en">Sintel</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Sintel on Sintel, starting at 15:00 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.20.</episode-num>
+  </programme>
+  <programme start="20260819154500 -0700" stop="20260819163000 -0700" channel="sintel">
+    <title lang="en">The Dragon Hunt</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">The Dragon Hunt on Sintel, starting at 15:45 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.21.</episode-num>
+  </programme>
+  <programme start="20260819163000 -0700" stop="20260819171500 -0700" channel="sintel">
+    <title lang="en">Concept Art Review</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Concept Art Review on Sintel, starting at 16:30 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.22.</episode-num>
+  </programme>
+  <programme start="20260819171500 -0700" stop="20260819180000 -0700" channel="sintel">
+    <title lang="en">Score and Sound</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Score and Sound on Sintel, starting at 17:15 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.23.</episode-num>
+  </programme>
+  <programme start="20260819180000 -0700" stop="20260819184500 -0700" channel="sintel">
+    <title lang="en">Sintel</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Sintel on Sintel, starting at 18:00 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.24.</episode-num>
+  </programme>
+  <programme start="20260819184500 -0700" stop="20260819193000 -0700" channel="sintel">
+    <title lang="en">The Dragon Hunt</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">The Dragon Hunt on Sintel, starting at 18:45 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.25.</episode-num>
+  </programme>
+  <programme start="20260819193000 -0700" stop="20260819201500 -0700" channel="sintel">
+    <title lang="en">Concept Art Review</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Concept Art Review on Sintel, starting at 19:30 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.26.</episode-num>
+  </programme>
+  <programme start="20260819201500 -0700" stop="20260819210000 -0700" channel="sintel">
+    <title lang="en">Score and Sound</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Score and Sound on Sintel, starting at 20:15 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.27.</episode-num>
+  </programme>
+  <programme start="20260819210000 -0700" stop="20260819214500 -0700" channel="sintel">
+    <title lang="en">Sintel</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Sintel on Sintel, starting at 21:00 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.28.</episode-num>
+  </programme>
+  <programme start="20260819214500 -0700" stop="20260819223000 -0700" channel="sintel">
+    <title lang="en">The Dragon Hunt</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">The Dragon Hunt on Sintel, starting at 21:45 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.29.</episode-num>
+  </programme>
+  <programme start="20260819223000 -0700" stop="20260819231500 -0700" channel="sintel">
+    <title lang="en">Concept Art Review</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Concept Art Review on Sintel, starting at 22:30 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.30.</episode-num>
+  </programme>
+  <programme start="20260819231500 -0700" stop="20260820000000 -0700" channel="sintel">
+    <title lang="en">Score and Sound</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Score and Sound on Sintel, starting at 23:15 on Wednesday 19 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.31.</episode-num>
+  </programme>
+  <programme start="20260820000000 -0700" stop="20260820004500 -0700" channel="sintel">
+    <title lang="en">Sintel</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Sintel on Sintel, starting at 00:00 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.32.</episode-num>
+  </programme>
+  <programme start="20260820004500 -0700" stop="20260820013000 -0700" channel="sintel">
+    <title lang="en">The Dragon Hunt</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">The Dragon Hunt on Sintel, starting at 00:45 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.33.</episode-num>
+  </programme>
+  <programme start="20260820013000 -0700" stop="20260820021500 -0700" channel="sintel">
+    <title lang="en">Concept Art Review</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Concept Art Review on Sintel, starting at 01:30 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.34.</episode-num>
+  </programme>
+  <programme start="20260820021500 -0700" stop="20260820030000 -0700" channel="sintel">
+    <title lang="en">Score and Sound</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Score and Sound on Sintel, starting at 02:15 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.35.</episode-num>
+  </programme>
+  <programme start="20260820030000 -0700" stop="20260820034500 -0700" channel="sintel">
+    <title lang="en">Sintel</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Sintel on Sintel, starting at 03:00 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.36.</episode-num>
+  </programme>
+  <programme start="20260820034500 -0700" stop="20260820043000 -0700" channel="sintel">
+    <title lang="en">The Dragon Hunt</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">The Dragon Hunt on Sintel, starting at 03:45 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.37.</episode-num>
+  </programme>
+  <programme start="20260820043000 -0700" stop="20260820051500 -0700" channel="sintel">
+    <title lang="en">Concept Art Review</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Concept Art Review on Sintel, starting at 04:30 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.38.</episode-num>
+  </programme>
+  <programme start="20260820051500 -0700" stop="20260820060000 -0700" channel="sintel">
+    <title lang="en">Score and Sound</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Score and Sound on Sintel, starting at 05:15 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.39.</episode-num>
+  </programme>
+  <programme start="20260820060000 -0700" stop="20260820064500 -0700" channel="sintel">
+    <title lang="en">Sintel</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Sintel on Sintel, starting at 06:00 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.40.</episode-num>
+  </programme>
+  <programme start="20260820064500 -0700" stop="20260820073000 -0700" channel="sintel">
+    <title lang="en">The Dragon Hunt</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">The Dragon Hunt on Sintel, starting at 06:45 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.41.</episode-num>
+  </programme>
+  <programme start="20260820073000 -0700" stop="20260820081500 -0700" channel="sintel">
+    <title lang="en">Concept Art Review</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Concept Art Review on Sintel, starting at 07:30 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.42.</episode-num>
+  </programme>
+  <programme start="20260820081500 -0700" stop="20260820090000 -0700" channel="sintel">
+    <title lang="en">Score and Sound</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Score and Sound on Sintel, starting at 08:15 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.43.</episode-num>
+  </programme>
+  <programme start="20260820090000 -0700" stop="20260820094500 -0700" channel="sintel">
+    <title lang="en">Sintel</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Sintel on Sintel, starting at 09:00 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.44.</episode-num>
+  </programme>
+  <programme start="20260820094500 -0700" stop="20260820103000 -0700" channel="sintel">
+    <title lang="en">The Dragon Hunt</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">The Dragon Hunt on Sintel, starting at 09:45 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.45.</episode-num>
+  </programme>
+  <programme start="20260820103000 -0700" stop="20260820111500 -0700" channel="sintel">
+    <title lang="en">Concept Art Review</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Concept Art Review on Sintel, starting at 10:30 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.46.</episode-num>
+  </programme>
+  <programme start="20260820111500 -0700" stop="20260820120000 -0700" channel="sintel">
+    <title lang="en">Score and Sound</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Score and Sound on Sintel, starting at 11:15 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.47.</episode-num>
+  </programme>
+  <programme start="20260820120000 -0700" stop="20260820124500 -0700" channel="sintel">
+    <title lang="en">Sintel</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Sintel on Sintel, starting at 12:00 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.48.</episode-num>
+  </programme>
+  <programme start="20260820124500 -0700" stop="20260820133000 -0700" channel="sintel">
+    <title lang="en">The Dragon Hunt</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">The Dragon Hunt on Sintel, starting at 12:45 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.49.</episode-num>
+  </programme>
+  <programme start="20260820133000 -0700" stop="20260820141500 -0700" channel="sintel">
+    <title lang="en">Concept Art Review</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Concept Art Review on Sintel, starting at 13:30 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.50.</episode-num>
+  </programme>
+  <programme start="20260820141500 -0700" stop="20260820150000 -0700" channel="sintel">
+    <title lang="en">Score and Sound</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Score and Sound on Sintel, starting at 14:15 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.51.</episode-num>
+  </programme>
+  <programme start="20260820150000 -0700" stop="20260820154500 -0700" channel="sintel">
+    <title lang="en">Sintel</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Sintel on Sintel, starting at 15:00 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.52.</episode-num>
+  </programme>
+  <programme start="20260820154500 -0700" stop="20260820163000 -0700" channel="sintel">
+    <title lang="en">The Dragon Hunt</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">The Dragon Hunt on Sintel, starting at 15:45 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.53.</episode-num>
+  </programme>
+  <programme start="20260820163000 -0700" stop="20260820171500 -0700" channel="sintel">
+    <title lang="en">Concept Art Review</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Concept Art Review on Sintel, starting at 16:30 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.54.</episode-num>
+  </programme>
+  <programme start="20260820171500 -0700" stop="20260820180000 -0700" channel="sintel">
+    <title lang="en">Score and Sound</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Score and Sound on Sintel, starting at 17:15 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.55.</episode-num>
+  </programme>
+  <programme start="20260820180000 -0700" stop="20260820184500 -0700" channel="sintel">
+    <title lang="en">Sintel</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Sintel on Sintel, starting at 18:00 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.56.</episode-num>
+  </programme>
+  <programme start="20260820184500 -0700" stop="20260820193000 -0700" channel="sintel">
+    <title lang="en">The Dragon Hunt</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">The Dragon Hunt on Sintel, starting at 18:45 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.57.</episode-num>
+  </programme>
+  <programme start="20260820193000 -0700" stop="20260820201500 -0700" channel="sintel">
+    <title lang="en">Concept Art Review</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Concept Art Review on Sintel, starting at 19:30 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.58.</episode-num>
+  </programme>
+  <programme start="20260820201500 -0700" stop="20260820210000 -0700" channel="sintel">
+    <title lang="en">Score and Sound</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Score and Sound on Sintel, starting at 20:15 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.59.</episode-num>
+  </programme>
+  <programme start="20260820210000 -0700" stop="20260820214500 -0700" channel="sintel">
+    <title lang="en">Sintel</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Sintel on Sintel, starting at 21:00 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.60.</episode-num>
+  </programme>
+  <programme start="20260820214500 -0700" stop="20260820223000 -0700" channel="sintel">
+    <title lang="en">The Dragon Hunt</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">The Dragon Hunt on Sintel, starting at 21:45 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.61.</episode-num>
+  </programme>
+  <programme start="20260820223000 -0700" stop="20260820231500 -0700" channel="sintel">
+    <title lang="en">Concept Art Review</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Concept Art Review on Sintel, starting at 22:30 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.62.</episode-num>
+  </programme>
+  <programme start="20260820231500 -0700" stop="20260821000000 -0700" channel="sintel">
+    <title lang="en">Score and Sound</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Score and Sound on Sintel, starting at 23:15 on Thursday 20 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.63.</episode-num>
+  </programme>
+  <programme start="20260821000000 -0700" stop="20260821004500 -0700" channel="sintel">
+    <title lang="en">Sintel</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Sintel on Sintel, starting at 00:00 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.64.</episode-num>
+  </programme>
+  <programme start="20260821004500 -0700" stop="20260821013000 -0700" channel="sintel">
+    <title lang="en">The Dragon Hunt</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">The Dragon Hunt on Sintel, starting at 00:45 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.65.</episode-num>
+  </programme>
+  <programme start="20260821013000 -0700" stop="20260821021500 -0700" channel="sintel">
+    <title lang="en">Concept Art Review</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Concept Art Review on Sintel, starting at 01:30 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.66.</episode-num>
+  </programme>
+  <programme start="20260821021500 -0700" stop="20260821030000 -0700" channel="sintel">
+    <title lang="en">Score and Sound</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Score and Sound on Sintel, starting at 02:15 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.67.</episode-num>
+  </programme>
+  <programme start="20260821030000 -0700" stop="20260821034500 -0700" channel="sintel">
+    <title lang="en">Sintel</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Sintel on Sintel, starting at 03:00 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.68.</episode-num>
+  </programme>
+  <programme start="20260821034500 -0700" stop="20260821043000 -0700" channel="sintel">
+    <title lang="en">The Dragon Hunt</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">The Dragon Hunt on Sintel, starting at 03:45 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.69.</episode-num>
+  </programme>
+  <programme start="20260821043000 -0700" stop="20260821051500 -0700" channel="sintel">
+    <title lang="en">Concept Art Review</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Concept Art Review on Sintel, starting at 04:30 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.70.</episode-num>
+  </programme>
+  <programme start="20260821051500 -0700" stop="20260821060000 -0700" channel="sintel">
+    <title lang="en">Score and Sound</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Score and Sound on Sintel, starting at 05:15 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.71.</episode-num>
+  </programme>
+  <programme start="20260821060000 -0700" stop="20260821064500 -0700" channel="sintel">
+    <title lang="en">Sintel</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Sintel on Sintel, starting at 06:00 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.72.</episode-num>
+  </programme>
+  <programme start="20260821064500 -0700" stop="20260821073000 -0700" channel="sintel">
+    <title lang="en">The Dragon Hunt</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">The Dragon Hunt on Sintel, starting at 06:45 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.73.</episode-num>
+  </programme>
+  <programme start="20260821073000 -0700" stop="20260821081500 -0700" channel="sintel">
+    <title lang="en">Concept Art Review</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Concept Art Review on Sintel, starting at 07:30 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.74.</episode-num>
+  </programme>
+  <programme start="20260821081500 -0700" stop="20260821090000 -0700" channel="sintel">
+    <title lang="en">Score and Sound</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Score and Sound on Sintel, starting at 08:15 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.75.</episode-num>
+  </programme>
+  <programme start="20260821090000 -0700" stop="20260821094500 -0700" channel="sintel">
+    <title lang="en">Sintel</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Sintel on Sintel, starting at 09:00 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.76.</episode-num>
+  </programme>
+  <programme start="20260821094500 -0700" stop="20260821103000 -0700" channel="sintel">
+    <title lang="en">The Dragon Hunt</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">The Dragon Hunt on Sintel, starting at 09:45 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.77.</episode-num>
+  </programme>
+  <programme start="20260821103000 -0700" stop="20260821111500 -0700" channel="sintel">
+    <title lang="en">Concept Art Review</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Concept Art Review on Sintel, starting at 10:30 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.78.</episode-num>
+  </programme>
+  <programme start="20260821111500 -0700" stop="20260821120000 -0700" channel="sintel">
+    <title lang="en">Score and Sound</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Score and Sound on Sintel, starting at 11:15 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.79.</episode-num>
+  </programme>
+  <programme start="20260821120000 -0700" stop="20260821124500 -0700" channel="sintel">
+    <title lang="en">Sintel</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Sintel on Sintel, starting at 12:00 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.80.</episode-num>
+  </programme>
+  <programme start="20260821124500 -0700" stop="20260821133000 -0700" channel="sintel">
+    <title lang="en">The Dragon Hunt</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">The Dragon Hunt on Sintel, starting at 12:45 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.81.</episode-num>
+  </programme>
+  <programme start="20260821133000 -0700" stop="20260821141500 -0700" channel="sintel">
+    <title lang="en">Concept Art Review</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Concept Art Review on Sintel, starting at 13:30 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.82.</episode-num>
+  </programme>
+  <programme start="20260821141500 -0700" stop="20260821150000 -0700" channel="sintel">
+    <title lang="en">Score and Sound</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Score and Sound on Sintel, starting at 14:15 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.83.</episode-num>
+  </programme>
+  <programme start="20260821150000 -0700" stop="20260821154500 -0700" channel="sintel">
+    <title lang="en">Sintel</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Sintel on Sintel, starting at 15:00 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.84.</episode-num>
+  </programme>
+  <programme start="20260821154500 -0700" stop="20260821163000 -0700" channel="sintel">
+    <title lang="en">The Dragon Hunt</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">The Dragon Hunt on Sintel, starting at 15:45 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.85.</episode-num>
+  </programme>
+  <programme start="20260821163000 -0700" stop="20260821171500 -0700" channel="sintel">
+    <title lang="en">Concept Art Review</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Concept Art Review on Sintel, starting at 16:30 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.86.</episode-num>
+  </programme>
+  <programme start="20260821171500 -0700" stop="20260821180000 -0700" channel="sintel">
+    <title lang="en">Score and Sound</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">Score and Sound on Sintel, starting at 17:15 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.87.</episode-num>
+  </programme>
+  <programme start="20260821180000 -0700" stop="20260821184500 -0700" channel="sintel">
+    <title lang="en">Sintel</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Sintel on Sintel, starting at 18:00 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.88.</episode-num>
+  </programme>
+  <programme start="20260821184500 -0700" stop="20260821193000 -0700" channel="sintel">
+    <title lang="en">The Dragon Hunt</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">The Dragon Hunt on Sintel, starting at 18:45 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.89.</episode-num>
+  </programme>
+  <programme start="20260821193000 -0700" stop="20260821201500 -0700" channel="sintel">
+    <title lang="en">Concept Art Review</title>
+    <sub-title lang="en">Part 1</sub-title>
+    <desc lang="en">Concept Art Review on Sintel, starting at 19:30 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.90.</episode-num>
+  </programme>
+  <programme start="20260821201500 -0700" stop="20260821210000 -0700" channel="sintel">
+    <title lang="en">Score and Sound</title>
+    <sub-title lang="en">Part 2</sub-title>
+    <desc lang="en">Score and Sound on Sintel, starting at 20:15 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.91.</episode-num>
+  </programme>
+  <programme start="20260821210000 -0700" stop="20260821214500 -0700" channel="sintel">
+    <title lang="en">Sintel</title>
+    <sub-title lang="en">Part 3</sub-title>
+    <desc lang="en">Sintel on Sintel, starting at 21:00 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.92.</episode-num>
+  </programme>
+  <programme start="20260821214500 -0700" stop="20260821223000 -0700" channel="sintel">
+    <title lang="en">The Dragon Hunt</title>
+    <sub-title lang="en">Part 4</sub-title>
+    <desc lang="en">The Dragon Hunt on Sintel, starting at 21:45 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.93.</episode-num>
+  </programme>
+  <programme start="20260821223000 -0700" stop="20260821231500 -0700" channel="sintel">
+    <title lang="en">Concept Art Review</title>
+    <sub-title lang="en">Part 5</sub-title>
+    <desc lang="en">Concept Art Review on Sintel, starting at 22:30 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.94.</episode-num>
+  </programme>
+  <programme start="20260821231500 -0700" stop="20260822000000 -0700" channel="sintel">
+    <title lang="en">Score and Sound</title>
+    <sub-title lang="en">Part 6</sub-title>
+    <desc lang="en">Score and Sound on Sintel, starting at 23:15 on Friday 21 August.</desc>
+    <category lang="en">Fantasy</category>
+    <episode-num system="xmltv_ns">0.95.</episode-num>
+  </programme>
+</tv>
+

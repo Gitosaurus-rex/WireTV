@@ -1,0 +1,193 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <!--
+    Dark palette, sized for a 10-foot interface.
+
+    Everything here assumes the viewer is across a room with a remote, not at a
+    desk with a mouse: type is large, hit areas are generous, and focus is loud
+    enough to find from the sofa. Colours are unchanged from the desktop theme.
+  -->
+  <Styles.Resources>
+    <SolidColorBrush x:Key="AppBackground" Color="#0E1013" />
+    <SolidColorBrush x:Key="AppSurface" Color="#16191F" />
+    <SolidColorBrush x:Key="AppSurfaceAlt" Color="#1D2129" />
+    <SolidColorBrush x:Key="AppBorder" Color="#2A2F3A" />
+    <SolidColorBrush x:Key="AppText" Color="#E8EAED" />
+    <SolidColorBrush x:Key="AppTextDim" Color="#9AA3B2" />
+    <SolidColorBrush x:Key="AppAccent" Color="#4F8CFF" />
+    <SolidColorBrush x:Key="AppSuccess" Color="#35C759" />
+    <SolidColorBrush x:Key="AppWarning" Color="#F0A44A" />
+    <SolidColorBrush x:Key="AppDanger" Color="#FF5C5C" />
+    <SolidColorBrush x:Key="AppVideoBackground" Color="#000000" />
+
+    <!-- Overlay scrims. Video stays readable underneath, text stays readable on top. -->
+    <SolidColorBrush x:Key="AppScrim" Color="#B3070A0E" />
+    <SolidColorBrush x:Key="AppPanelScrim" Color="#F0121519" />
+
+    <LinearGradientBrush x:Key="AppBottomScrim" StartPoint="0%,0%" EndPoint="0%,100%">
+      <GradientStop Offset="0" Color="#00070A0E" />
+      <GradientStop Offset="0.45" Color="#B3070A0E" />
+      <GradientStop Offset="1" Color="#F2070A0E" />
+    </LinearGradientBrush>
+
+    <!-- TVs overscan; nothing important goes inside this margin. -->
+    <Thickness x:Key="AppSafeArea">48</Thickness>
+  </Styles.Resources>
+
+  <Style Selector="Window">
+    <Setter Property="Background" Value="{StaticResource AppBackground}" />
+    <Setter Property="FontFamily" Value="Inter, Segoe UI, sans-serif" />
+    <Setter Property="FontSize" Value="18" />
+  </Style>
+
+  <Style Selector="TextBlock">
+    <Setter Property="Foreground" Value="{StaticResource AppText}" />
+    <Setter Property="FontSize" Value="18" />
+  </Style>
+
+  <!-- Secondary text: captions, hints, metadata lines. -->
+  <Style Selector="TextBlock.dim">
+    <Setter Property="Foreground" Value="{StaticResource AppTextDim}" />
+    <Setter Property="FontSize" Value="15" />
+  </Style>
+
+  <Style Selector="TextBlock.caption">
+    <Setter Property="Foreground" Value="{StaticResource AppTextDim}" />
+    <Setter Property="FontSize" Value="13" />
+    <Setter Property="LetterSpacing" Value="1.2" />
+    <Setter Property="FontWeight" Value="SemiBold" />
+  </Style>
+
+  <Style Selector="TextBlock.heading">
+    <Setter Property="FontSize" Value="26" />
+    <Setter Property="FontWeight" Value="SemiBold" />
+    <Setter Property="Margin" Value="0,0,0,12" />
+  </Style>
+
+  <Style Selector="TextBlock.title">
+    <Setter Property="FontSize" Value="34" />
+    <Setter Property="FontWeight" Value="Bold" />
+  </Style>
+
+  <Style Selector="Border.panel">
+    <Setter Property="Background" Value="{StaticResource AppSurface}" />
+    <Setter Property="BorderBrush" Value="{StaticResource AppBorder}" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="CornerRadius" Value="10" />
+  </Style>
+
+  <!-- ============ Buttons ============ -->
+
+  <Style Selector="Button">
+    <Setter Property="Background" Value="{StaticResource AppSurfaceAlt}" />
+    <Setter Property="Foreground" Value="{StaticResource AppText}" />
+    <Setter Property="BorderBrush" Value="{StaticResource AppBorder}" />
+    <Setter Property="BorderThickness" Value="2" />
+    <Setter Property="CornerRadius" Value="8" />
+    <Setter Property="Padding" Value="20,12" />
+    <Setter Property="FontSize" Value="18" />
+  </Style>
+
+  <Style Selector="Button:pointerover /template/ ContentPresenter">
+    <Setter Property="Background" Value="#272C36" />
+    <Setter Property="TextBlock.Foreground" Value="{StaticResource AppText}" />
+  </Style>
+
+  <!-- Keyboard focus has to be unmistakable from across a room. -->
+  <Style Selector="Button:focus /template/ ContentPresenter">
+    <Setter Property="Background" Value="{StaticResource AppAccent}" />
+    <Setter Property="TextBlock.Foreground" Value="#0B1220" />
+    <Setter Property="BorderBrush" Value="#BBD4FF" />
+  </Style>
+
+  <Style Selector="Button.accent">
+    <Setter Property="Background" Value="{StaticResource AppAccent}" />
+    <Setter Property="Foreground" Value="#0B1220" />
+    <Setter Property="BorderThickness" Value="2" />
+    <Setter Property="BorderBrush" Value="Transparent" />
+    <Setter Property="FontWeight" Value="SemiBold" />
+  </Style>
+
+  <Style Selector="Button.accent:pointerover /template/ ContentPresenter">
+    <Setter Property="Background" Value="#6BA0FF" />
+    <Setter Property="TextBlock.Foreground" Value="#0B1220" />
+  </Style>
+
+  <Style Selector="Button.danger">
+    <Setter Property="Foreground" Value="{StaticResource AppDanger}" />
+  </Style>
+
+  <!-- ============ Inputs ============ -->
+
+  <Style Selector="TextBox">
+    <Setter Property="Background" Value="{StaticResource AppSurfaceAlt}" />
+    <Setter Property="Foreground" Value="{StaticResource AppText}" />
+    <Setter Property="BorderBrush" Value="{StaticResource AppBorder}" />
+    <Setter Property="BorderThickness" Value="2" />
+    <Setter Property="CornerRadius" Value="8" />
+    <Setter Property="Padding" Value="14,10" />
+    <Setter Property="FontSize" Value="18" />
+  </Style>
+
+  <Style Selector="TextBox:focus">
+    <Setter Property="BorderBrush" Value="{StaticResource AppAccent}" />
+  </Style>
+
+  <Style Selector="ComboBox">
+    <Setter Property="Background" Value="{StaticResource AppSurfaceAlt}" />
+    <Setter Property="Foreground" Value="{StaticResource AppText}" />
+    <Setter Property="BorderBrush" Value="{StaticResource AppBorder}" />
+    <Setter Property="BorderThickness" Value="2" />
+    <Setter Property="CornerRadius" Value="8" />
+    <Setter Property="Padding" Value="14,10" />
+    <Setter Property="FontSize" Value="18" />
+  </Style>
+
+  <Style Selector="ComboBox:focus /template/ Border#Background">
+    <Setter Property="BorderBrush" Value="{StaticResource AppAccent}" />
+  </Style>
+
+  <!-- ============ Lists ============ -->
+
+  <Style Selector="ListBox">
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="BorderThickness" Value="0" />
+  </Style>
+
+  <Style Selector="ListBoxItem">
+    <Setter Property="Padding" Value="16,12" />
+    <Setter Property="CornerRadius" Value="8" />
+    <Setter Property="Margin" Value="0,1" />
+  </Style>
+
+  <!--
+    Two distinct states matter on a TV, and they must not look the same:
+    "selected" is the channel actually playing, "focused" is where the D-pad is.
+  -->
+  <Style Selector="ListBoxItem:selected /template/ ContentPresenter">
+    <Setter Property="Background" Value="#2A3140" />
+  </Style>
+
+  <Style Selector="ListBox:focus-within ListBoxItem:selected /template/ ContentPresenter">
+    <Setter Property="Background" Value="{StaticResource AppAccent}" />
+    <Setter Property="TextBlock.Foreground" Value="#0B1220" />
+  </Style>
+
+  <Style Selector="ListBoxItem:pointerover /template/ ContentPresenter">
+    <Setter Property="Background" Value="#242A34" />
+  </Style>
+
+  <!-- ============ Misc ============ -->
+
+  <Style Selector="ProgressBar">
+    <Setter Property="Foreground" Value="{StaticResource AppAccent}" />
+    <Setter Property="Background" Value="#33FFFFFF" />
+  </Style>
+
+  <Style Selector="TabItem">
+    <Setter Property="FontSize" Value="22" />
+    <Setter Property="Padding" Value="18,10" />
+  </Style>
+
+</Styles>
