@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <AssemblyName>WireTv.Windows.Vpn</AssemblyName>
+    <RootNamespace>WireTv.Windows.Vpn</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ServiceProcess.ServiceController" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\WireTv.Core.csproj" />
+    <ProjectReference Include="..\Core.Vpn\WireTv.Core.Vpn.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,7 +1,7 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        x:Class="OpenTv.Windows.UI.Views.MessageDialog"
-        Title="OpenTv"
+        x:Class="WireTv.Windows.UI.Views.MessageDialog"
+        Title="WireTV"
         Width="440"
         SizeToContent="Height"
         MinHeight="150"
@@ -11,7 +11,7 @@
 
   <Border Classes="panel" Margin="16" Padding="18">
     <StackPanel Spacing="16">
-      <TextBlock x:Name="HeaderText" Classes="heading" Text="OpenTv" />
+      <TextBlock x:Name="HeaderText" Classes="heading" Text="WireTV" />
       <TextBlock x:Name="BodyText" TextWrapping="Wrap" Text="" />
       <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Spacing="8">
         <Button x:Name="CancelButton" Content="Cancel" IsVisible="False" Click="OnCancel" />

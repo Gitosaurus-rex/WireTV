@@ -1,4 +1,4 @@
-namespace OpenTv.Core.Models;
+namespace WireTv.Core.Models;
 
 /// <summary>
 /// A single playable entry parsed from a playlist.

@@ -1,4 +1,4 @@
-namespace OpenTv.Core.Vpn;
+namespace WireTv.Core.Vpn;
 
 public enum VpnKind
 {
@@ -34,7 +34,7 @@ public sealed record VpnState(
     public bool IsBusy => Status is VpnStatus.Connecting or VpnStatus.Disconnecting;
 }
 
-/// <summary>A VPN configuration the user has imported into OpenTv.</summary>
+/// <summary>A VPN configuration the user has imported into WireTv.</summary>
 public sealed class VpnProfile
 {
     public string Id { get; set; } = Guid.NewGuid().ToString("N");
@@ -45,7 +45,7 @@ public sealed class VpnProfile
     public VpnKind Kind { get; set; } = VpnKind.WireGuard;
 
     /// <summary>
-    /// Absolute path to the config file OpenTv owns. Import copies the user's
+    /// Absolute path to the config file WireTv owns. Import copies the user's
     /// original file here so later edits or deletions cannot break the profile.
     /// </summary>
     public string ConfigPath { get; set; } = string.Empty;

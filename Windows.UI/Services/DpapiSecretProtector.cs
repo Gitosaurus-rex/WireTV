@@ -1,9 +1,9 @@
 using System.Runtime.Versioning;
 using System.Security.Cryptography;
 using System.Text;
-using OpenTv.Core.Storage;
+using WireTv.Core.Storage;
 
-namespace OpenTv.Windows.UI.Services;
+namespace WireTv.Windows.UI.Services;
 
 /// <summary>
 /// Encrypts stored passwords with Windows DPAPI under the current user account.
@@ -20,7 +20,15 @@ public sealed class DpapiSecretProtector : ISecretProtector
     private const string Prefix = "dpapi:";
 
     /// <summary>Ties the ciphertext to this app; a value lifted into another app will not decrypt.</summary>
-    private static readonly byte[] Entropy = Encoding.UTF8.GetBytes("OpenTv.v1.credentials");
+    private static readonly byte[] Entropy = Encoding.UTF8.GetBytes("WireTv.v1.credentials");
+
+    /// <summary>
+    /// Entropy used before the app was renamed. Passwords already on disk were
+    /// encrypted with it, so decryption falls back to it and the value is re-encrypted
+    /// under the current entropy the next time the profile is saved. Removing this
+    /// would silently invalidate every stored credential from an older install.
+    /// </summary>
+    private static readonly byte[] LegacyEntropy = Encoding.UTF8.GetBytes("OpenTv.v1.credentials");
 
     public string? Protect(string? plaintext)
     {
@@ -46,18 +54,35 @@ public sealed class DpapiSecretProtector : ISecretProtector
         if (string.IsNullOrEmpty(stored) || !stored.StartsWith(Prefix, StringComparison.Ordinal))
             return stored;
 
+        byte[] encrypted;
+
         try
         {
-            var encrypted = Convert.FromBase64String(stored[Prefix.Length..]);
-
-            var plaintext = ProtectedData.Unprotect(encrypted, Entropy, DataProtectionScope.CurrentUser);
-            return Encoding.UTF8.GetString(plaintext);
+            encrypted = Convert.FromBase64String(stored[Prefix.Length..]);
         }
-        catch (Exception ex) when (ex is CryptographicException or FormatException)
+        catch (FormatException)
         {
-            // Happens when the file was copied from another machine or user account.
-            // Returning null makes the UI ask for the password again rather than
-            // sending ciphertext to the provider as if it were the password.
+            return null;
+        }
+
+        return TryUnprotect(encrypted, Entropy) ?? TryUnprotect(encrypted, LegacyEntropy);
+    }
+
+    /// <summary>
+    /// Returns null rather than throwing, so the caller can try the legacy entropy.
+    /// A null result also reaches the UI as "ask for the password again", which is
+    /// what should happen when the file came from another machine or user account -
+    /// far better than sending ciphertext to the provider as if it were a password.
+    /// </summary>
+    private static string? TryUnprotect(byte[] encrypted, byte[] entropy)
+    {
+        try
+        {
+            return Encoding.UTF8.GetString(
+                ProtectedData.Unprotect(encrypted, entropy, DataProtectionScope.CurrentUser));
+        }
+        catch (CryptographicException)
+        {
             return null;
         }
     }

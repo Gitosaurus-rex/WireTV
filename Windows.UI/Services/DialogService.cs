@@ -2,29 +2,18 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Platform.Storage;
-using OpenTv.Windows.UI.Views;
+using WireTv.UI.Services;
+using WireTv.Windows.UI.Views;
 
-namespace OpenTv.Windows.UI.Services;
-
-/// <summary>
-/// The window-dependent operations a ViewModel needs. Kept behind an interface so
-/// the ViewModels stay testable and free of direct Window references.
-/// </summary>
-public interface IDialogService
-{
-    Task<string?> PickFileAsync(string title, string typeName, IReadOnlyList<string> patterns);
-
-    Task ShowMessageAsync(string title, string message);
-
-    Task<bool> ConfirmAsync(string title, string message);
-}
+namespace WireTv.Windows.UI.Services;
 
 /// <summary>
-/// Resolves the owner window at call time rather than being bound to one window.
+/// Desktop implementation of <see cref="IDialogService"/>.
 ///
+/// Resolves the owner window at call time rather than being bound to one window.
 /// That matters because some ViewModels (the VPN one in particular) are shared
-/// between the main window and the modal settings window: a dialog parented to the
-/// wrong window would appear behind the modal one.
+/// between the shell and the modal settings window: a dialog parented to the wrong
+/// window would appear behind the modal one.
 /// </summary>
 public sealed class DialogService : IDialogService
 {

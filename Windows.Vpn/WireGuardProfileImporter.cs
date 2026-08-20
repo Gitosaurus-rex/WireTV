@@ -1,10 +1,10 @@
 using System.Runtime.Versioning;
-using OpenTv.Core.Vpn;
+using WireTv.Core.Vpn;
 
-namespace OpenTv.Windows.Vpn;
+namespace WireTv.Windows.Vpn;
 
 /// <summary>
-/// Copies a user-supplied .conf into the directory OpenTv owns.
+/// Copies a user-supplied .conf into the directory WireTv owns.
 ///
 /// wireguard.exe derives the tunnel name from the config file's base name, and that
 /// name also becomes part of a Windows service name, so the file is renamed to a

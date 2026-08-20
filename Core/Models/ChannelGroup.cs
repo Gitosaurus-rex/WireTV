@@ -1,4 +1,4 @@
-namespace OpenTv.Core.Models;
+namespace WireTv.Core.Models;
 
 /// <summary>A named bucket of channels, derived from group-title / #EXTGRP.</summary>
 public sealed class ChannelGroup

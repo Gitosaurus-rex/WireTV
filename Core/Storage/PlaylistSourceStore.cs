@@ -1,6 +1,6 @@
-using OpenTv.Core.Models;
+using WireTv.Core.Models;
 
-namespace OpenTv.Core.Storage;
+namespace WireTv.Core.Storage;
 
 /// <summary>Root document persisted to sources.json.</summary>
 public sealed class PlaylistSourceDocument

@@ -2,7 +2,7 @@ using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 
-namespace OpenTv.Windows.UI.Views;
+namespace WireTv.Windows.UI.Views;
 
 /// <summary>
 /// Minimal message/confirm dialog. Avalonia ships no MessageBox, and a whole

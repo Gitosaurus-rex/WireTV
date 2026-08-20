@@ -1,6 +1,6 @@
-using OpenTv.Core.Storage;
+using WireTv.Core.Storage;
 
-namespace OpenTv.Core.Vpn;
+namespace WireTv.Core.Vpn;
 
 /// <summary>Root document persisted to vpn-profiles.json.</summary>
 public sealed class VpnProfileDocument

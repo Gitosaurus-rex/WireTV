@@ -1,4 +1,4 @@
-namespace OpenTv.Core.Vpn;
+namespace WireTv.Core.Vpn;
 
 /// <summary>
 /// One VPN backend (WireGuard or OpenVPN) on one platform.

@@ -1,6 +1,6 @@
-using OpenTv.Core.Models;
+using WireTv.Core.Models;
 
-namespace OpenTv.Core.Epg;
+namespace WireTv.Core.Epg;
 
 /// <summary>
 /// A parsed programme guide, keyed by XMLTV channel id.

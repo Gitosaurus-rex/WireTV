@@ -2,12 +2,12 @@ using System.Diagnostics;
 using System.Runtime.Versioning;
 using System.Security.Principal;
 
-namespace OpenTv.Windows.Vpn;
+namespace WireTv.Windows.Vpn;
 
 /// <summary>
 /// UAC helpers.
 ///
-/// OpenTv itself runs as a normal user - forcing the whole app to run elevated
+/// WireTv itself runs as a normal user - forcing the whole app to run elevated
 /// just to watch TV is bad practice. Only the tunnel commands need admin rights,
 /// so they are launched through ShellExecute with the "runas" verb, producing one
 /// UAC prompt per tunnel operation instead of one for the entire application.

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Platform-neutral on purpose: this assembly must compile unchanged for
+         a future net8.0-android / net8.0-ios head. Nothing here may reference
+         Windows APIs, WPF/Avalonia, or LibVLC. -->
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>WireTv.Core</AssemblyName>
+    <RootNamespace>WireTv.Core</RootNamespace>
+  </PropertyGroup>
+
+</Project>

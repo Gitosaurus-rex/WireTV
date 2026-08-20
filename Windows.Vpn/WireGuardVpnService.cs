@@ -1,8 +1,8 @@
 using System.Runtime.Versioning;
 using System.ServiceProcess;
-using OpenTv.Core.Vpn;
+using WireTv.Core.Vpn;
 
-namespace OpenTv.Windows.Vpn;
+namespace WireTv.Windows.Vpn;
 
 /// <summary>
 /// Drives the official WireGuard for Windows tunnel service.
@@ -16,7 +16,7 @@ namespace OpenTv.Windows.Vpn;
 /// it - so <see cref="WireGuardProfileImporter"/> makes sure imported files are named
 /// with a valid, unique tunnel name.
 ///
-/// A tunnel deliberately outlives the app process: quitting OpenTv does not tear the
+/// A tunnel deliberately outlives the app process: quitting WireTv does not tear the
 /// VPN down, which avoids dropping the user onto their bare connection unannounced.
 /// <see cref="RefreshAsync"/> re-adopts a tunnel that is already up at startup.
 /// </summary>
@@ -55,7 +55,7 @@ public sealed class WireGuardVpnService : IVpnService
 
     public string? UnavailableReason => IsAvailable
         ? null
-        : $"WireGuard for Windows is not installed. Get it from {WireGuardLocator.DownloadUrl} and restart OpenTv.";
+        : $"WireGuard for Windows is not installed. Get it from {WireGuardLocator.DownloadUrl} and restart WireTV.";
 
     /// <summary>Path to the wireguard.exe being driven, for diagnostics.</summary>
     public string? ExecutablePath => _executable;
@@ -302,7 +302,7 @@ public sealed class WireGuardVpnService : IVpnService
 
     private void StopWatchdog() => _watchdog.Change(Timeout.Infinite, Timeout.Infinite);
 
-    /// <summary>Notices a tunnel taken down outside OpenTv (WireGuard UI, reboot, crash).</summary>
+    /// <summary>Notices a tunnel taken down outside WireTv (WireGuard UI, reboot, crash).</summary>
     private Task WatchdogTickAsync()
     {
         if (_disposed || _tunnelName is null || _state.IsBusy)
@@ -312,7 +312,7 @@ public sealed class WireGuardVpnService : IVpnService
         {
             _tunnelName = null;
             StopWatchdog();
-            SetState(new VpnState(VpnStatus.Disconnected, null, "The tunnel was stopped outside OpenTv."));
+            SetState(new VpnState(VpnStatus.Disconnected, null, "The tunnel was stopped outside WireTV."));
         }
 
         return Task.CompletedTask;

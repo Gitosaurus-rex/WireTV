@@ -1,0 +1,511 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:WireTv.UI.ViewModels"
+        xmlns:models="clr-namespace:WireTv.Core.Models;assembly=WireTv.Core"
+        xmlns:conv="using:Avalonia.Data.Converters"
+        xmlns:controls="clr-namespace:WireTv.UI.Controls"
+        x:Class="WireTv.UI.Views.TvShellView"
+        x:DataType="vm:TvShellViewModel"
+        Background="Black">
+
+  <Panel>
+
+    <!-- ============ Layer 1: video ============ -->
+    <controls:VideoSurface x:Name="Video" />
+
+    <!-- Idle state. Nothing decoded yet, so say why rather than showing black. -->
+    <StackPanel HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Spacing="14"
+                IsVisible="{Binding !Player.IsPlaying}">
+      <Image Source="avares://WireTv.Shared.UI/Assets/logo.png"
+             Width="132"
+             Height="132"
+             HorizontalAlignment="Center" />
+
+      <TextBlock Text="WireTV"
+                 FontSize="46"
+                 FontWeight="Bold"
+                 HorizontalAlignment="Center" />
+      <TextBlock Classes="dim"
+                 FontSize="20"
+                 HorizontalAlignment="Center"
+                 Text="{Binding Player.StatusText}" />
+      <TextBlock Classes="dim"
+                 FontSize="18"
+                 HorizontalAlignment="Center"
+                 Text="Press OK for channels" />
+    </StackPanel>
+
+    <!-- ============ Layer 3: info bar (bottom) ============ -->
+    <Border VerticalAlignment="Bottom"
+            Background="{StaticResource AppBottomScrim}"
+            Padding="48,60,48,44"
+            IsVisible="{Binding IsInfoBarVisible}">
+      <Grid ColumnDefinitions="Auto,*" DataContext="{Binding SelectedChannel}" x:DataType="vm:ChannelListItemViewModel">
+
+        <Border Grid.Column="0"
+                Background="{StaticResource AppAccent}"
+                CornerRadius="10"
+                Padding="18,10"
+                Margin="0,0,24,0"
+                VerticalAlignment="Top"
+                IsVisible="{Binding Number, Converter={x:Static conv:ObjectConverters.IsNotNull}}">
+          <TextBlock Text="{Binding Number}"
+                     FontSize="30"
+                     FontWeight="Bold"
+                     Foreground="#0B1220" />
+        </Border>
+
+        <StackPanel Grid.Column="1" Spacing="8">
+          <TextBlock Classes="title"
+                     Text="{Binding Name}"
+                     TextTrimming="CharacterEllipsis" />
+
+          <StackPanel Orientation="Horizontal" Spacing="16" IsVisible="{Binding HasNow}">
+            <TextBlock Text="{Binding NowTimeRange}"
+                       FontSize="20"
+                       Foreground="{StaticResource AppAccent}"
+                       FontWeight="SemiBold"
+                       VerticalAlignment="Center" />
+            <TextBlock Text="{Binding NowTitle}"
+                       FontSize="22"
+                       TextTrimming="CharacterEllipsis"
+                       VerticalAlignment="Center" />
+          </StackPanel>
+
+          <ProgressBar Height="5"
+                       Minimum="0"
+                       Maximum="100"
+                       Width="560"
+                       HorizontalAlignment="Left"
+                       Value="{Binding NowProgress}"
+                       IsVisible="{Binding HasNow}" />
+
+          <TextBlock Classes="dim"
+                     FontSize="17"
+                     TextTrimming="CharacterEllipsis"
+                     IsVisible="{Binding NextTitle, Converter={x:Static conv:StringConverters.IsNotNullOrEmpty}}"
+                     Text="{Binding NextTitle, StringFormat=&apos;Next: {0}&apos;}" />
+        </StackPanel>
+      </Grid>
+    </Border>
+
+    <!-- Key hints, shown alongside the info bar so the remote mapping is discoverable. -->
+    <Border HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Margin="48"
+            Padding="18,10"
+            CornerRadius="8"
+            Background="{StaticResource AppScrim}"
+            IsVisible="{Binding IsInfoBarVisible}">
+      <TextBlock Classes="dim"
+                 FontSize="15"
+                 Text="OK  Channels        Up / Down  Change channel        Back  Exit" />
+    </Border>
+
+    <!-- ============ Layer 4: channel drawer ============ -->
+    <Border HorizontalAlignment="Left"
+            Width="900"
+            Background="{StaticResource AppPanelScrim}"
+            BorderBrush="{StaticResource AppBorder}"
+            BorderThickness="0,0,1,0"
+            IsVisible="{Binding IsChannelDrawerOpen}">
+      <Grid RowDefinitions="Auto,*,Auto" Margin="32,44,32,36">
+
+        <Grid Grid.Row="0" ColumnDefinitions="*,Auto" Margin="0,0,0,20">
+          <TextBlock Grid.Column="0"
+                     Classes="heading"
+                     Margin="0"
+                     Text="{Binding SelectedSource.Name, FallbackValue='Channels'}"
+                     VerticalAlignment="Center" />
+          <TextBlock Grid.Column="1"
+                     Classes="dim"
+                     VerticalAlignment="Center"
+                     Text="{Binding Channels.Count, StringFormat=&apos;{}{0} channels&apos;}" />
+        </Grid>
+
+        <Grid Grid.Row="1" ColumnDefinitions="190,240,*">
+
+          <!-- Menu column. On a remote with only a D-pad, OK and Back, this is how
+               the guide and settings are reached: keep pressing Left. -->
+          <Border Grid.Column="0" Margin="0,0,18,0">
+            <ListBox x:Name="MenuList"
+                     Classes.active="{Binding IsMenuPaneActive}"
+                     ItemsSource="{Binding MenuEntries}"
+                     SelectedItem="{Binding SelectedMenuEntry}"
+                     ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+              <ListBox.ItemTemplate>
+                <DataTemplate x:DataType="vm:DrawerMenuEntry">
+                  <TextBlock Text="{Binding Label}"
+                             FontSize="18"
+                             TextTrimming="CharacterEllipsis" />
+                </DataTemplate>
+              </ListBox.ItemTemplate>
+            </ListBox>
+          </Border>
+
+          <!-- Groups. With hundreds of them this is the primary way to navigate. -->
+          <Border Grid.Column="1" Margin="0,0,18,0">
+            <ListBox x:Name="GroupList"
+                     Classes.active="{Binding IsGroupPaneActive}"
+                     ItemsSource="{Binding Groups}"
+                     SelectedItem="{Binding SelectedGroup}"
+                     ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+              <ListBox.ItemTemplate>
+                <DataTemplate x:DataType="x:String">
+                  <TextBlock Text="{Binding}"
+                             FontSize="17"
+                             TextTrimming="CharacterEllipsis" />
+                </DataTemplate>
+              </ListBox.ItemTemplate>
+            </ListBox>
+          </Border>
+
+          <ListBox x:Name="ChannelList"
+                   Classes.active="{Binding IsChannelPaneActive}"
+                   Grid.Column="2"
+                   ItemsSource="{Binding Channels}"
+                   SelectedItem="{Binding HighlightedChannel}"
+                   ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListBox.ItemTemplate>
+              <DataTemplate x:DataType="vm:ChannelListItemViewModel">
+                <Grid ColumnDefinitions="56,*">
+                  <TextBlock Grid.Column="0"
+                             Text="{Binding Number}"
+                             Classes="dim"
+                             FontSize="16"
+                             VerticalAlignment="Center"
+                             HorizontalAlignment="Right"
+                             Margin="0,0,14,0" />
+
+                  <StackPanel Grid.Column="1" Spacing="4">
+                    <TextBlock Text="{Binding Name}"
+                               FontSize="19"
+                               TextTrimming="CharacterEllipsis" />
+
+                    <TextBlock Classes="dim"
+                               Text="{Binding NowTitle}"
+                               TextTrimming="CharacterEllipsis"
+                               IsVisible="{Binding HasNow}" />
+
+                    <ProgressBar Height="3"
+                                 Minimum="0"
+                                 Maximum="100"
+                                 Value="{Binding NowProgress}"
+                                 IsVisible="{Binding HasNow}" />
+                  </StackPanel>
+                </Grid>
+              </DataTemplate>
+            </ListBox.ItemTemplate>
+          </ListBox>
+        </Grid>
+
+        <TextBlock Grid.Row="2"
+                   Classes="dim"
+                   FontSize="15"
+                   Margin="0,18,0,0"
+                   Text="Left / Right  Menu, groups, channels        OK  Watch        Back  Close" />
+      </Grid>
+    </Border>
+
+    <!-- ============ Layer 5: guide ============ -->
+    <Border Background="{StaticResource AppPanelScrim}" IsVisible="{Binding IsGuideOpen}">
+      <Grid Margin="48" DataContext="{Binding GuideView}" x:DataType="vm:GuideViewModel">
+        <Grid ColumnDefinitions="200,380,*" RowDefinitions="Auto,*,Auto">
+
+          <TextBlock Grid.Row="0"
+                     Grid.ColumnSpan="3"
+                     Classes="heading"
+                     FontSize="30"
+                     Text="TV guide" />
+
+          <!-- Day column. A remote with no colour or number keys has nothing spare
+               to bind day switching to, so it becomes a column you walk left into. -->
+          <Border Grid.Row="1" Grid.Column="0" Margin="0,0,24,0">
+            <ListBox x:Name="GuideDayList"
+                     Classes.active="{Binding IsDayPaneActive}"
+                     ItemsSource="{Binding Days}"
+                     SelectedItem="{Binding SelectedDay}"
+                     ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+              <ListBox.ItemTemplate>
+                <DataTemplate x:DataType="vm:GuideDayViewModel">
+                  <TextBlock Text="{Binding Label}" FontSize="17" TextTrimming="CharacterEllipsis" />
+                </DataTemplate>
+              </ListBox.ItemTemplate>
+            </ListBox>
+          </Border>
+
+          <Border Grid.Row="1" Grid.Column="1" Margin="0,0,28,0">
+            <ListBox x:Name="GuideChannelList"
+                     Classes.active="{Binding IsChannelPaneActive}"
+                     ItemsSource="{Binding Channels}"
+                     SelectedItem="{Binding SelectedChannel}"
+                     ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+              <ListBox.ItemTemplate>
+                <DataTemplate x:DataType="vm:ChannelListItemViewModel">
+                  <StackPanel Spacing="3">
+                    <TextBlock Text="{Binding Name}" FontSize="19" TextTrimming="CharacterEllipsis" />
+                    <TextBlock Classes="dim"
+                               Text="{Binding NowTitle}"
+                               TextTrimming="CharacterEllipsis"
+                               IsVisible="{Binding HasNow}" />
+                  </StackPanel>
+                </DataTemplate>
+              </ListBox.ItemTemplate>
+            </ListBox>
+          </Border>
+
+          <Grid Grid.Row="1" Grid.Column="2" RowDefinitions="Auto,*">
+
+            <StackPanel Grid.Row="0" Orientation="Horizontal" Spacing="14" Margin="0,0,0,16">
+              <TextBlock Text="{Binding SelectedChannel.Name, FallbackValue=''}"
+                         FontSize="24"
+                         FontWeight="SemiBold"
+                         VerticalAlignment="Center" />
+              <Border Background="{StaticResource AppSurfaceAlt}" CornerRadius="6" Padding="12,6">
+                <TextBlock Text="{Binding SelectedDay.Label, FallbackValue='Today'}"
+                           FontSize="16"
+                           VerticalAlignment="Center" />
+              </Border>
+            </StackPanel>
+
+            <Panel Grid.Row="1">
+              <ListBox x:Name="GuideProgrammeList"
+                       Classes.active="{Binding IsProgrammePaneActive}"
+                       ItemsSource="{Binding Programmes}"
+                       SelectedItem="{Binding SelectedProgramme}"
+                       ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                <ListBox.ItemTemplate>
+                  <DataTemplate x:DataType="vm:GuideProgrammeViewModel">
+                    <Grid ColumnDefinitions="150,*">
+                      <TextBlock Grid.Column="0"
+                                 Text="{Binding TimeRange}"
+                                 FontFamily="Consolas, Cascadia Mono, monospace"
+                                 FontSize="17"
+                                 VerticalAlignment="Top"
+                                 Margin="0,2,16,0" />
+
+                      <StackPanel Grid.Column="1" Spacing="5">
+                        <StackPanel Orientation="Horizontal" Spacing="12">
+                          <TextBlock Text="{Binding Title}"
+                                     FontSize="20"
+                                     FontWeight="SemiBold"
+                                     TextTrimming="CharacterEllipsis" />
+                          <Border Background="{StaticResource AppAccent}"
+                                  CornerRadius="4"
+                                  Padding="9,2"
+                                  VerticalAlignment="Center"
+                                  IsVisible="{Binding IsAiringNow}">
+                            <TextBlock Text="NOW" FontSize="12" FontWeight="Bold" Foreground="#0B1220" />
+                          </Border>
+                        </StackPanel>
+
+                        <ProgressBar Height="4"
+                                     Minimum="0"
+                                     Maximum="100"
+                                     Value="{Binding Progress}"
+                                     IsVisible="{Binding IsAiringNow}" />
+
+                        <TextBlock Classes="dim" Text="{Binding Meta}" />
+
+                        <TextBlock Classes="dim"
+                                   Text="{Binding Description}"
+                                   TextWrapping="Wrap"
+                                   MaxLines="2"
+                                   TextTrimming="CharacterEllipsis"
+                                   IsVisible="{Binding Description, Converter={x:Static conv:StringConverters.IsNotNullOrEmpty}}" />
+                      </StackPanel>
+                    </Grid>
+                  </DataTemplate>
+                </ListBox.ItemTemplate>
+              </ListBox>
+
+              <TextBlock HorizontalAlignment="Center"
+                         VerticalAlignment="Center"
+                         Classes="dim"
+                         FontSize="19"
+                         TextWrapping="Wrap"
+                         MaxWidth="460"
+                         TextAlignment="Center"
+                         Text="{Binding StatusText}"
+                         IsVisible="{Binding !HasProgrammes}" />
+            </Panel>
+          </Grid>
+
+          <TextBlock Grid.Row="2"
+                     Grid.ColumnSpan="3"
+                     Classes="dim"
+                     FontSize="15"
+                     Margin="0,18,0,0"
+                     Text="Left / Right  Days, channels, schedule        OK  Watch        Back  Channels" />
+        </Grid>
+      </Grid>
+    </Border>
+
+    <!-- ============ Layer 6: settings ============ -->
+    <Border Background="{StaticResource AppPanelScrim}" IsVisible="{Binding IsSettingsOpen}">
+      <Grid Margin="48" RowDefinitions="Auto,*,Auto"
+            DataContext="{Binding SettingsView}" x:DataType="vm:SettingsViewModel">
+
+        <TextBlock Grid.Row="0" Classes="heading" FontSize="30" Text="Settings" />
+
+        <Grid Grid.Row="1" ColumnDefinitions="380,*">
+
+          <!-- Providers -->
+          <Grid Grid.Column="0" RowDefinitions="*,Auto" Margin="0,0,28,0">
+            <Border Grid.Row="0" Classes="panel" Padding="8">
+              <ListBox ItemsSource="{Binding Sources}"
+                       SelectedItem="{Binding SelectedSource}"
+                       ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                <ListBox.ItemTemplate>
+                  <DataTemplate x:DataType="models:PlaylistSource">
+                    <StackPanel Spacing="3">
+                      <TextBlock Text="{Binding Name}" FontSize="19" TextTrimming="CharacterEllipsis" />
+                      <TextBlock Classes="dim" Text="{Binding Kind}" />
+                    </StackPanel>
+                  </DataTemplate>
+                </ListBox.ItemTemplate>
+              </ListBox>
+            </Border>
+
+            <StackPanel Grid.Row="1" Orientation="Horizontal" Spacing="12" Margin="0,14,0,0">
+              <Button Classes="accent" Content="Add" Command="{Binding AddNewCommand}" />
+              <Button Classes="danger"
+                      Content="Remove"
+                      Command="{Binding RemoveCommand}"
+                      IsEnabled="{Binding HasSelection}" />
+            </StackPanel>
+          </Grid>
+
+          <!-- Editor -->
+          <Border Grid.Column="1" Classes="panel" Padding="24" IsEnabled="{Binding HasSelection}">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+              <StackPanel Spacing="16">
+
+                <StackPanel Spacing="6">
+                  <TextBlock Classes="caption" Text="NAME" />
+                  <TextBox Text="{Binding EditName}" />
+                </StackPanel>
+
+                <StackPanel Spacing="6">
+                  <TextBlock Classes="caption" Text="TYPE" />
+                  <ComboBox HorizontalAlignment="Stretch"
+                            ItemsSource="{Binding SourceKinds}"
+                            SelectedItem="{Binding EditKind}" />
+                </StackPanel>
+
+                <StackPanel Spacing="6">
+                  <TextBlock Classes="caption" Text="{Binding LocationLabel}" />
+                  <Grid ColumnDefinitions="*,Auto">
+                    <TextBox Grid.Column="0" Text="{Binding EditLocation}" />
+                    <Button Grid.Column="1"
+                            Content="Browse"
+                            Margin="12,0,0,0"
+                            IsVisible="{Binding !IsXtreamSource}"
+                            Command="{Binding BrowseCommand}" />
+                  </Grid>
+                </StackPanel>
+
+                <StackPanel Spacing="6" IsVisible="{Binding IsXtreamSource}">
+                  <TextBlock Classes="caption" Text="USERNAME" />
+                  <TextBox Text="{Binding EditUsername}" />
+                </StackPanel>
+
+                <StackPanel Spacing="6" IsVisible="{Binding IsXtreamSource}">
+                  <TextBlock Classes="caption" Text="PASSWORD" />
+                  <TextBox Text="{Binding EditPassword}" PasswordChar="*" />
+                </StackPanel>
+
+                <StackPanel Spacing="6">
+                  <TextBlock Classes="caption" Text="XMLTV EPG URL (OPTIONAL)" />
+                  <TextBox Text="{Binding EditEpgUrl}" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Spacing="12">
+                  <Button Classes="accent" Content="Save" Command="{Binding SaveCommand}" />
+                  <Button Content="Test connection"
+                          IsVisible="{Binding IsXtreamSource}"
+                          IsEnabled="{Binding !IsTesting}"
+                          Command="{Binding TestConnectionCommand}" />
+                </StackPanel>
+
+                <TextBlock Classes="dim"
+                           TextWrapping="Wrap"
+                           Text="{Binding Feedback}"
+                           IsVisible="{Binding Feedback, Converter={x:Static conv:StringConverters.IsNotNullOrEmpty}}" />
+
+                <!-- VPN is hidden entirely where no backend exists, rather than
+                     showing controls that cannot do anything. -->
+                <StackPanel Spacing="12" IsVisible="{Binding HasVpnSupport}">
+                  <Rectangle Height="1" Fill="{StaticResource AppBorder}" Margin="0,8" />
+
+                  <TextBlock Classes="caption" Text="VPN" />
+
+                  <StackPanel Orientation="Horizontal" Spacing="12" DataContext="{Binding Vpn}"
+                              x:DataType="vm:VpnViewModel">
+                    <Ellipse Width="12" Height="12" Fill="{Binding StatusBrush}" VerticalAlignment="Center" />
+                    <TextBlock Text="{Binding StatusLabel}" FontWeight="SemiBold" VerticalAlignment="Center" />
+                  </StackPanel>
+
+                  <StackPanel Orientation="Horizontal" Spacing="12" DataContext="{Binding Vpn}"
+                              x:DataType="vm:VpnViewModel">
+                    <Button Content="Import .conf" Command="{Binding ImportProfileCommand}" />
+                    <Button Classes="accent"
+                            Content="Connect"
+                            Command="{Binding ConnectCommand}"
+                            IsEnabled="{Binding !IsBusy}" />
+                    <Button Content="Disconnect"
+                            Command="{Binding DisconnectCommand}"
+                            IsEnabled="{Binding !IsBusy}" />
+                  </StackPanel>
+
+                  <TextBlock Classes="dim"
+                             TextWrapping="Wrap"
+                             DataContext="{Binding Vpn}"
+                             x:DataType="vm:VpnViewModel"
+                             Text="{Binding StatusDetail}"
+                             IsVisible="{Binding StatusDetail, Converter={x:Static conv:StringConverters.IsNotNullOrEmpty}}" />
+                </StackPanel>
+
+              </StackPanel>
+            </ScrollViewer>
+          </Border>
+        </Grid>
+
+        <TextBlock Grid.Row="2"
+                   Classes="dim"
+                   FontSize="15"
+                   Margin="0,18,0,0"
+                   Text="Arrows  Move      OK  Activate      Back  Close" />
+      </Grid>
+    </Border>
+
+    <!--
+      Status strip last, so it stays on top of every other layer. Clock and VPN
+      state are exactly what you want visible while browsing the guide.
+    -->
+    <Border HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Margin="48"
+            Padding="20,12"
+            CornerRadius="10"
+            Background="{StaticResource AppScrim}"
+            IsVisible="{Binding IsChromeVisible}">
+      <StackPanel Orientation="Horizontal" Spacing="20">
+        <StackPanel Orientation="Horizontal" Spacing="10" VerticalAlignment="Center">
+          <Ellipse Width="12" Height="12" Fill="{Binding Vpn.StatusBrush}" VerticalAlignment="Center" />
+          <TextBlock Text="{Binding Vpn.StatusLabel}" FontSize="17" VerticalAlignment="Center" />
+        </StackPanel>
+
+        <Rectangle Width="1" Fill="{StaticResource AppBorder}" Margin="0,2" />
+
+        <TextBlock Text="{Binding ClockText}"
+                   FontSize="24"
+                   FontWeight="SemiBold"
+                   VerticalAlignment="Center" />
+      </StackPanel>
+    </Border>
+
+  </Panel>
+</UserControl>

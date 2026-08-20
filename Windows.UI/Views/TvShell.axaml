@@ -1,0 +1,15 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="WireTv.Windows.UI.Views.TvShell"
+        Title="WireTV"
+        Icon="avares://WireTv.Shared.UI/Assets/logo.png"
+        Width="1600" Height="900"
+        MinWidth="960" MinHeight="540"
+        Background="Black"
+        WindowStartupLocation="CenterScreen">
+
+  <!-- Content is the shared TvShellView, created in code-behind so the Windows
+       dialog implementation can be injected into it. This window only gives the
+       shared interface a desktop frame; the Android head hosts it in an Activity. -->
+
+</Window>

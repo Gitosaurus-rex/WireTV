@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Contracts only. Platform-neutral so an Android/iOS head can implement
+         IVpnService against its own VPN APIs without touching this assembly. -->
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>WireTv.Core.Vpn</AssemblyName>
+    <RootNamespace>WireTv.Core.Vpn</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\WireTv.Core.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -63,7 +63,7 @@ function Escape-Xml([string] $text) {
 
 $builder = [System.Text.StringBuilder]::new()
 [void]$builder.AppendLine('<?xml version="1.0" encoding="UTF-8"?>')
-[void]$builder.AppendLine('<tv generator-info-name="OpenTv sample generator">')
+[void]$builder.AppendLine('<tv generator-info-name="WireTv sample generator">')
 
 foreach ($id in $channels.Keys) {
     $channel = $channels[$id]

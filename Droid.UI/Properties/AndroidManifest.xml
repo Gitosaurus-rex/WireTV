@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <!-- Streaming needs the network; nothing else is requested. -->
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+  <!-- required=false on both, so the one APK installs on a TV and on a phone.
+       A TV has no touchscreen; a phone has no leanback launcher. -->
+  <uses-feature android:name="android.software.leanback" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+
+  <application android:label="WireTV"
+               android:icon="@mipmap/appicon"
+               android:banner="@drawable/banner"
+               android:isGame="false"
+               android:hardwareAccelerated="true"
+               android:supportsRtl="true" />
+
+</manifest>

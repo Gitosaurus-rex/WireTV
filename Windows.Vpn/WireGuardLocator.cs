@@ -1,12 +1,12 @@
 using System.Runtime.Versioning;
 using System.Text.RegularExpressions;
 
-namespace OpenTv.Windows.Vpn;
+namespace WireTv.Windows.Vpn;
 
 /// <summary>
 /// Finds the official WireGuard for Windows installation and validates tunnel names.
-/// OpenTv drives wireguard.exe rather than embedding WireGuardNT, so the user
-/// installs WireGuard once and OpenTv reuses its signed driver and tunnel service.
+/// WireTv drives wireguard.exe rather than embedding WireGuardNT, so the user
+/// installs WireGuard once and WireTv reuses its signed driver and tunnel service.
 /// </summary>
 [SupportedOSPlatform("windows")]
 public static class WireGuardLocator

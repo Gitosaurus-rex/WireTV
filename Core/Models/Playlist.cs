@@ -1,4 +1,4 @@
-namespace OpenTv.Core.Models;
+namespace WireTv.Core.Models;
 
 /// <summary>The parsed result of one M3U/M3U8 document.</summary>
 public sealed class Playlist

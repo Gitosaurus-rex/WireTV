@@ -2,7 +2,7 @@ using System.Globalization;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace OpenTv.Core.Xtream;
+namespace WireTv.Core.Xtream;
 
 /// <summary>
 /// Xtream Codes panels are wildly inconsistent about JSON types: the same field

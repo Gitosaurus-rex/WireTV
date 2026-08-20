@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace OpenTv.Core.Xtream;
+namespace WireTv.Core.Xtream;
 
 /// <summary>Connection details for one Xtream Codes provider.</summary>
 public sealed record XtreamCredentials(string BaseUrl, string Username, string Password)

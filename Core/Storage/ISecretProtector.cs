@@ -1,4 +1,4 @@
-namespace OpenTv.Core.Storage;
+namespace WireTv.Core.Storage;
 
 /// <summary>
 /// Encrypts values that must not sit in plaintext on disk - currently Xtream

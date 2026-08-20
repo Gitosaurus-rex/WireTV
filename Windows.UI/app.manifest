@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v1">
-  <assemblyIdentity version="1.0.0.0" name="OpenTv.app" />
+  <assemblyIdentity version="1.0.0.0" name="WireTV.app" />
 
-  <!-- OpenTv runs as a normal user. Only the WireGuard/OpenVPN tunnel commands
+  <!-- WireTv runs as a normal user. Only the WireGuard/OpenVPN tunnel commands
        need administrator rights, and they request it per operation through
        ShellExecute "runas", which produces a UAC prompt just for that action. -->
   <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">

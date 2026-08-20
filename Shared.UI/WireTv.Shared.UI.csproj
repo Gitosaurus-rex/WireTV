@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Deliberately platform-neutral: this assembly is referenced by both the
+         Windows head and the Android head, so it must not touch either. -->
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>WireTv.Shared.UI</AssemblyName>
+    <RootNamespace>WireTv.UI</RootNamespace>
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="$(AvaloniaVersion)" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="$(AvaloniaVersion)" />
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+    <PackageReference Include="LibVLCSharp" Version="$(LibVlcSharpVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Stated explicitly rather than relying on the default glob, so the logo is
+         still embedded if this project is ever consumed differently. -->
+    <AvaloniaResource Include="Assets\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\WireTv.Core.csproj" />
+    <ProjectReference Include="..\Core.Vpn\WireTv.Core.Vpn.csproj" />
+  </ItemGroup>
+
+</Project>

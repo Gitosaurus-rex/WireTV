@@ -2,10 +2,10 @@ using System.IO.Compression;
 using System.Net;
 using System.Security.Cryptography;
 using System.Text;
-using OpenTv.Core.Models;
-using OpenTv.Core.Storage;
+using WireTv.Core.Models;
+using WireTv.Core.Storage;
 
-namespace OpenTv.Core.Epg;
+namespace WireTv.Core.Epg;
 
 /// <summary>
 /// Fetches XMLTV guides and turns them into an <see cref="EpgGuide"/>.

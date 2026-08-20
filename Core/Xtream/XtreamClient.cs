@@ -1,8 +1,8 @@
 using System.Net;
 using System.Text.Json;
-using OpenTv.Core.Models;
+using WireTv.Core.Models;
 
-namespace OpenTv.Core.Xtream;
+namespace WireTv.Core.Xtream;
 
 /// <summary>
 /// Client for the Xtream Codes player API.

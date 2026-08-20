@@ -1,4 +1,4 @@
-namespace OpenTv.Core.Models;
+namespace WireTv.Core.Models;
 
 public enum PlaylistSourceKind
 {

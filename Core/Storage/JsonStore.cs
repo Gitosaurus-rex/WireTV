@@ -1,7 +1,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace OpenTv.Core.Storage;
+namespace WireTv.Core.Storage;
 
 /// <summary>
 /// Small JSON-file backed store for a single settings document.

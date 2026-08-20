@@ -1,0 +1,69 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- net9.0 rather than net8.0 because LibVLCSharp ships no net8.0-android
+         target; net9.0-android35.0 is its lowest modern Android TFM. The shared
+         and core projects stay on net8.0 and are referenced from here. -->
+    <TargetFramework>net9.0-android35.0</TargetFramework>
+    <SupportedOSPlatformVersion>23</SupportedOSPlatformVersion>
+    <OutputType>Exe</OutputType>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>WireTv.Droid</RootNamespace>
+    <AssemblyName>WireTV</AssemblyName>
+
+    <ApplicationId>com.wiretv.player</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
+    <ApplicationDisplayVersion>0.1.0</ApplicationDisplayVersion>
+
+    <AndroidPackageFormat>apk</AndroidPackageFormat>
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+
+    <!--
+      Release for .NET Android defaults to trimming plus profiled AOT. Both are
+      hostile to Avalonia: XAML loading and the MVVM toolkit resolve types by
+      reflection, so the linker removes code that is only referenced from markup and
+      the app dies during startup with a black screen.
+
+      Turning them off costs startup time and APK size, and buys an app that runs.
+      Re-enabling means adding explicit trimmer descriptors, not just flipping these.
+    -->
+    <PublishTrimmed>false</PublishTrimmed>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <RunAOTCompilation>false</RunAOTCompilation>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+
+    <!-- Keeps the managed stack trace readable when something does throw. -->
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+
+    <!--
+      Falls back to where InstallAndroidDependencies puts the SDK, so building the
+      solution works without ANDROID_HOME set in the shell. An explicit
+      AndroidSdkDirectory or ANDROID_HOME still wins.
+    -->
+    <AndroidSdkDirectory Condition="'$(AndroidSdkDirectory)' == '' AND '$(ANDROID_HOME)' == '' AND Exists('$(LOCALAPPDATA)\Android\Sdk')">$(LOCALAPPDATA)\Android\Sdk</AndroidSdkDirectory>
+
+    <!-- Android TV boxes are overwhelmingly arm64; x86_64 covers emulators. -->
+    <!-- arm64 plus 32-bit arm covers essentially every Android TV device. x86/x64
+         are emulator-only and would add another ~70 MB of libvlc per ABI. -->
+    <RuntimeIdentifiers>android-arm64;android-arm</RuntimeIdentifiers>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="$(AvaloniaVersion)" />
+    <PackageReference Include="Avalonia.Android" Version="$(AvaloniaVersion)" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="$(AvaloniaVersion)" />
+    <PackageReference Include="Avalonia.Fonts.Inter" Version="$(AvaloniaVersion)" />
+    <PackageReference Include="LibVLCSharp" Version="$(LibVlcSharpVersion)" />
+    <!-- Native libvlc for Android; the equivalent of VideoLAN.LibVLC.Windows. -->
+    <PackageReference Include="VideoLAN.LibVLC.Android" Version="3.6.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\WireTv.Core.csproj" />
+    <ProjectReference Include="..\Core.Vpn\WireTv.Core.Vpn.csproj" />
+    <ProjectReference Include="..\Shared.UI\WireTv.Shared.UI.csproj" />
+  </ItemGroup>
+
+</Project>

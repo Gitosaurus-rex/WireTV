@@ -4,8 +4,8 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <Product>OpenTv</Product>
-    <Company>OpenTv</Company>
+    <Product>WireTV</Product>
+    <Company>WireTV</Company>
     <Version>0.1.0</Version>
     <!-- Central place to bump third-party versions for every project. -->
     <AvaloniaVersion>11.3.20</AvaloniaVersion>

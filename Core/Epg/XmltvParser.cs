@@ -1,9 +1,9 @@
 using System.Globalization;
 using System.Text;
 using System.Xml;
-using OpenTv.Core.Models;
+using WireTv.Core.Models;
 
-namespace OpenTv.Core.Epg;
+namespace WireTv.Core.Epg;
 
 /// <summary>Controls how much of a guide is kept, so a large XMLTV file does not become a large heap.</summary>
 public sealed class XmltvParseOptions

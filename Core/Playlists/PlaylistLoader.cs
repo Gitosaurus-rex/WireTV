@@ -1,9 +1,9 @@
 using System.Net;
 using System.Text;
-using OpenTv.Core.Models;
-using OpenTv.Core.Xtream;
+using WireTv.Core.Models;
+using WireTv.Core.Xtream;
 
-namespace OpenTv.Core.Playlists;
+namespace WireTv.Core.Playlists;
 
 /// <summary>
 /// Fetches playlist documents from URLs or local files and hands them to the parser.

@@ -1,4 +1,4 @@
-namespace OpenTv.Core.Vpn;
+namespace WireTv.Core.Vpn;
 
 /// <summary>
 /// Routes connect/disconnect requests to the backend that matches the profile

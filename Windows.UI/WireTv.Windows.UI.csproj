@@ -1,0 +1,95 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <AssemblyName>WireTV</AssemblyName>
+    <RootNamespace>WireTv.Windows.UI</RootNamespace>
+    <!-- asInvoker: only the tunnel commands elevate, not the whole player. -->
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+    <!-- Compiled bindings turn XAML binding typos into build errors. -->
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+    <ApplicationIcon>..\assets\wiretv.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!--
+      Set EmbedLibVlc=true to produce ONE self-contained .exe. The VLC engine is
+      then compressed into the assembly and unpacked at first run by VlcRuntime,
+      instead of being copied next to the exe as ~420 loose files.
+
+      This is required for single-file publishing: .NET flattens bundled native
+      libraries into a temp directory, which destroys the libvlc\win-x64\plugins
+      layout VLC needs in order to find its codecs.
+    -->
+    <EmbedLibVlc Condition="'$(EmbedLibVlc)' == ''">false</EmbedLibVlc>
+
+    <!-- The package copies both architectures by default; we only ever ship x64. -->
+    <VlcWindowsX86Enabled>false</VlcWindowsX86Enabled>
+    <!-- When embedding, stop the package copying loose files we would only duplicate. -->
+    <VlcWindowsX64Enabled Condition="'$(EmbedLibVlc)' == 'true'">false</VlcWindowsX64Enabled>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="$(AvaloniaVersion)" />
+    <PackageReference Include="Avalonia.Desktop" Version="$(AvaloniaVersion)" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="$(AvaloniaVersion)" />
+    <PackageReference Include="Avalonia.Fonts.Inter" Version="$(AvaloniaVersion)" />
+    <PackageReference Include="Avalonia.Diagnostics" Version="$(AvaloniaVersion)" Condition="'$(Configuration)' == 'Debug'" />
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+    <!-- DPAPI, used to encrypt stored Xtream passwords. -->
+    <PackageReference Include="System.Security.Cryptography.ProtectedData" Version="8.0.0" />
+    <PackageReference Include="LibVLCSharp" Version="$(LibVlcSharpVersion)" />
+    <PackageReference Include="LibVLCSharp.Avalonia" Version="$(LibVlcSharpVersion)" />
+    <!-- Ships the native VLC engine; this is what makes the published exe standalone. -->
+    <PackageReference Include="VideoLAN.LibVLC.Windows" Version="$(LibVlcNativeVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\WireTv.Core.csproj" />
+    <ProjectReference Include="..\Core.Vpn\WireTv.Core.Vpn.csproj" />
+    <ProjectReference Include="..\Shared.UI\WireTv.Shared.UI.csproj" />
+    <ProjectReference Include="..\Windows.Vpn\WireTv.Windows.Vpn.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- VlcRuntime reads this to name its cache folder, so a VLC upgrade unpacks
+         fresh rather than mixing plugins from two versions. -->
+    <AssemblyMetadata Include="LibVlcNativeVersion" Value="$(LibVlcNativeVersion)" />
+  </ItemGroup>
+
+  <Target Name="EmbedLibVlcArchive" BeforeTargets="BeforeBuild" Condition="'$(EmbedLibVlc)' == 'true'">
+    <PropertyGroup>
+      <NuGetPackageRoot Condition="'$(NuGetPackageRoot)' == ''">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+      <LibVlcNativeDir>$(NuGetPackageRoot)videolan.libvlc.windows\$(LibVlcNativeVersion)\build\x64\</LibVlcNativeDir>
+      <LibVlcStageDir>$(IntermediateOutputPath)libvlc-stage-$(LibVlcNativeVersion)\</LibVlcStageDir>
+      <LibVlcArchive>$(IntermediateOutputPath)libvlc-win-x64-$(LibVlcNativeVersion).zip</LibVlcArchive>
+    </PropertyGroup>
+
+    <Error Condition="!Exists('$(LibVlcNativeDir)')"
+           Text="The native VLC files were not found at $(LibVlcNativeDir). Run 'dotnet restore' first." />
+
+    <ItemGroup>
+      <!-- The engine and its data files, minus the C/C++ headers and import
+           libraries in the package, which a .NET app never needs. -->
+      <LibVlcPayload Include="$(LibVlcNativeDir)**\*"
+                     Exclude="$(LibVlcNativeDir)include\**\*;$(LibVlcNativeDir)*.lib" />
+    </ItemGroup>
+
+    <Copy SourceFiles="@(LibVlcPayload)"
+          DestinationFiles="@(LibVlcPayload->'$(LibVlcStageDir)%(RecursiveDir)%(Filename)%(Extension)')"
+          SkipUnchangedFiles="true" />
+
+    <!-- Zipping ~100 MB is slow, so it happens once per VLC version. -->
+    <ZipDirectory SourceDirectory="$(LibVlcStageDir)"
+                  DestinationFile="$(LibVlcArchive)"
+                  Overwrite="false"
+                  Condition="!Exists('$(LibVlcArchive)')" />
+
+    <ItemGroup>
+      <EmbeddedResource Include="$(LibVlcArchive)" LogicalName="WireTv.libvlc-win-x64.zip" />
+    </ItemGroup>
+  </Target>
+
+</Project>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!--
+    The parent MUST be an AppCompat theme.
+
+    Avalonia's AvaloniaMainActivity derives from AndroidX AppCompatActivity, which
+    checks its theme during onCreate and throws
+    "You need to use a Theme.AppCompat theme (or descendant) with this activity"
+    otherwise. That happens before Avalonia draws anything, so the failure looks
+    like a black screen and an instant exit with no error - there is no managed
+    exception to catch or display.
+  -->
+  <style name="WireTvTheme.Splash" parent="Theme.AppCompat.NoActionBar">
+    <item name="android:windowBackground">@android:color/black</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowActionBar">false</item>
+    <item name="android:windowFullscreen">true</item>
+  </style>
+
+</resources>

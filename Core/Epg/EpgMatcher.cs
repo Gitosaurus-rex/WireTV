@@ -1,8 +1,8 @@
 using System.Globalization;
 using System.Text;
-using OpenTv.Core.Models;
+using WireTv.Core.Models;
 
-namespace OpenTv.Core.Epg;
+namespace WireTv.Core.Epg;
 
 /// <summary>
 /// Pairs playlist channels with guide channels.

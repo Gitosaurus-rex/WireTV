@@ -1,4 +1,4 @@
-namespace OpenTv.Core.Models;
+namespace WireTv.Core.Models;
 
 /// <summary>A single entry in the electronic programme guide.</summary>
 public sealed class EpgProgramme

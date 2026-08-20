@@ -1,9 +1,9 @@
 using System.Globalization;
 using System.Text;
 using System.Text.RegularExpressions;
-using OpenTv.Core.Models;
+using WireTv.Core.Models;
 
-namespace OpenTv.Core.Playlists;
+namespace WireTv.Core.Playlists;
 
 /// <summary>
 /// Parser for extended M3U playlists as shipped by IPTV providers.

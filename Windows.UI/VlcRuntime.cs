@@ -1,11 +1,11 @@
 using System.IO.Compression;
 using System.Reflection;
-using OpenTv.Core.Storage;
+using WireTv.Core.Storage;
 
-namespace OpenTv.Windows.UI;
+namespace WireTv.Windows.UI;
 
 /// <summary>
-/// Locates the native VLC engine for the two ways OpenTv ships.
+/// Locates the native VLC engine for the two ways WireTv ships.
 ///
 /// Folder deployment (the default) leaves libvlc.dll and its ~100 MB of codec
 /// plugins next to the exe, and LibVLCSharp finds them on its own.
@@ -19,7 +19,7 @@ namespace OpenTv.Windows.UI;
 internal static class VlcRuntime
 {
     /// <summary>Set by the EmbedLibVlc build target. Absent in a folder deployment.</summary>
-    private const string ResourceName = "OpenTv.libvlc-win-x64.zip";
+    private const string ResourceName = "WireTv.libvlc-win-x64.zip";
 
     /// <summary>Written only after a complete extraction, so a half-unpacked folder is never trusted.</summary>
     private const string MarkerFileName = ".extracted";

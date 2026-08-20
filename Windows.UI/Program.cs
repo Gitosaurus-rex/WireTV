@@ -1,6 +1,7 @@
 using Avalonia;
+using WireTv.UI;
 
-namespace OpenTv.Windows.UI;
+namespace WireTv.Windows.UI;
 
 internal static class Program
 {
@@ -48,23 +49,4 @@ internal static class Program
             .UsePlatformDetect()
             .WithInterFont()
             .LogToTrace();
-}
-
-/// <summary>Startup problems worth surfacing in the UI instead of crashing silently.</summary>
-internal static class StartupDiagnostics
-{
-    public static Exception? LibVlcFailure { get; set; }
-
-    public static void WriteCrashLog(Exception ex)
-    {
-        try
-        {
-            var path = Core.Storage.AppPaths.InData("crash.log");
-            File.AppendAllText(path, $"[{DateTimeOffset.Now:O}] {ex}{Environment.NewLine}{Environment.NewLine}");
-        }
-        catch
-        {
-            // A failure to log must never mask the original exception.
-        }
-    }
 }
